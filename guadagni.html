@@ -111,6 +111,117 @@
       .chi-siamo-grid { grid-template-columns: 1fr !important; }
       .perche-cards-grid { grid-template-columns: 1fr !important; }
     }
+    /* Sezione problema / soluzione */
+    .problema-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .problema-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .problema-badge-line {
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: #25D366;
+      flex-shrink: 0;
+    }
+    .problema-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #1a1a2e;
+      margin-bottom: 1.2rem;
+    }
+    .problema-subtitle {
+      font-size: 1rem;
+      color: #64748b;
+      line-height: 1.7;
+      margin-bottom: 1.8rem;
+    }
+    .problema-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .problema-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+      line-height: 1.5;
+    }
+    .problema-list li::before {
+      content: '×';
+      color: #ef4444;
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      flex-shrink: 0;
+    }
+    .problema-trust {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      background: rgba(37,211,102,0.06);
+      border: 1px solid rgba(37,211,102,0.25);
+      border-radius: 8px;
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+    .soluzione-card {
+      background: #1a1a2e;
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+    }
+    .soluzione-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #25D366;
+      line-height: 1.3;
+      margin-bottom: 1.8rem;
+    }
+    .soluzione-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .soluzione-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      line-height: 1.55;
+    }
+    .soluzione-list li::before {
+      content: '✓';
+      color: #25D366;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.5;
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .problema-grid { grid-template-columns: 1fr; }
+      .problema-title { font-size: 1.8rem; }
+    }
     /* Microcopy sotto CTA */
     .hero-microcopy {
       margin-top: 0.85rem;
@@ -366,111 +477,45 @@
     </div>
   </div>
 
-  <!-- ===== SERVICES ===== -->
-  <section class="services" id="servizi" style="padding-top:3rem;padding-bottom:2rem;">
+  <!-- ===== PROBLEMA / SOLUZIONE ===== -->
+  <section class="services" id="servizi" style="padding-top:4rem;padding-bottom:4rem;">
     <div class="container">
-      <div class="services-new">
+      <div class="problema-grid">
 
-        <!-- Sinistra: rete SVG -->
-        <div class="brands-float-area" style="display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="width:80%;max-width:400px;">
-            <defs>
-              <symbol id="pi" viewBox="0 0 30 30">
-                <circle cx="15" cy="10" r="7" fill="white" opacity="0.85"/>
-                <path d="M4,30 Q4,19 15,17 Q26,19 26,30" fill="white" opacity="0.85"/>
-              </symbol>
-              <radialGradient id="bg2" cx="50%" cy="50%" r="55%">
-                <stop offset="0%" stop-color="#dce8ff" stop-opacity="0.7"/>
-                <stop offset="100%" stop-color="#f5f5f5" stop-opacity="0"/>
-              </radialGradient>
-              <filter id="glow2">
-                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-            <ellipse cx="250" cy="250" rx="235" ry="225" fill="url(#bg2)"/>
-            <!-- Lines center → L1 (3 vicini) -->
-            <line x1="250" y1="250" x2="165" y2="162" stroke="#3a5fce" stroke-width="1.8" opacity="0.45"/>
-            <line x1="250" y1="250" x2="342" y2="162" stroke="#3a5fce" stroke-width="1.8" opacity="0.45"/>
-            <line x1="250" y1="250" x2="248" y2="358" stroke="#3a5fce" stroke-width="1.8" opacity="0.45"/>
-            <!-- Lines L1 → L2 (9 nodi medi) -->
-            <line x1="165" y1="162" x2="80"  y2="100" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="165" y1="162" x2="162" y2="62"  stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="165" y1="162" x2="72"  y2="210" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="342" y1="162" x2="342" y2="62"  stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="342" y1="162" x2="428" y2="105" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="342" y1="162" x2="432" y2="215" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="248" y1="358" x2="148" y2="435" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="248" y1="358" x2="252" y2="452" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <line x1="248" y1="358" x2="360" y2="435" stroke="#3a5fce" stroke-width="1.2" opacity="0.3"/>
-            <!-- Lines L2 → L3 (18 nodi piccoli) -->
-            <line x1="80"  y1="100" x2="38"  y2="52"  stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="80"  y1="100" x2="28"  y2="148" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="162" y1="62"  x2="122" y2="22"  stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="162" y1="62"  x2="198" y2="22"  stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="72"  y1="210" x2="22"  y2="168" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="72"  y1="210" x2="25"  y2="262" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="342" y1="62"  x2="300" y2="22"  stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="342" y1="62"  x2="378" y2="22"  stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="428" y1="105" x2="452" y2="55"  stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="428" y1="105" x2="472" y2="142" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="432" y1="215" x2="472" y2="182" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="432" y1="215" x2="475" y2="258" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="148" y1="435" x2="85"  y2="468" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="148" y1="435" x2="148" y2="480" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="252" y1="452" x2="200" y2="480" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="252" y1="452" x2="295" y2="480" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="360" y1="435" x2="352" y2="478" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <line x1="360" y1="435" x2="415" y2="465" stroke="#3a5fce" stroke-width="0.8" opacity="0.2"/>
-            <!-- L3 nodes (r=16, piccoli, anello esterno) -->
-            <g><circle cx="38"  cy="52"  r="16" fill="#3462ce"/><use href="#pi" x="26"  y="40"  width="24" height="24"/></g>
-            <g><circle cx="28"  cy="148" r="16" fill="#2a52be"/><use href="#pi" x="16"  y="136" width="24" height="24"/></g>
-            <g><circle cx="122" cy="22"  r="16" fill="#3462ce"/><use href="#pi" x="110" y="10"  width="24" height="24"/></g>
-            <g><circle cx="198" cy="22"  r="16" fill="#2a52be"/><use href="#pi" x="186" y="10"  width="24" height="24"/></g>
-            <g><circle cx="22"  cy="168" r="16" fill="#3462ce"/><use href="#pi" x="10"  y="156" width="24" height="24"/></g>
-            <g><circle cx="25"  cy="262" r="16" fill="#2a52be"/><use href="#pi" x="13"  y="250" width="24" height="24"/></g>
-            <g><circle cx="300" cy="22"  r="16" fill="#3462ce"/><use href="#pi" x="288" y="10"  width="24" height="24"/></g>
-            <g><circle cx="378" cy="22"  r="16" fill="#2a52be"/><use href="#pi" x="366" y="10"  width="24" height="24"/></g>
-            <g><circle cx="452" cy="55"  r="16" fill="#3462ce"/><use href="#pi" x="440" y="43"  width="24" height="24"/></g>
-            <g><circle cx="472" cy="142" r="16" fill="#2a52be"/><use href="#pi" x="460" y="130" width="24" height="24"/></g>
-            <g><circle cx="472" cy="182" r="16" fill="#3462ce"/><use href="#pi" x="460" y="170" width="24" height="24"/></g>
-            <g><circle cx="475" cy="258" r="16" fill="#2a52be"/><use href="#pi" x="463" y="246" width="24" height="24"/></g>
-            <g><circle cx="85"  cy="468" r="16" fill="#3462ce"/><use href="#pi" x="73"  y="456" width="24" height="24"/></g>
-            <g><circle cx="148" cy="480" r="16" fill="#2a52be"/><use href="#pi" x="136" y="468" width="24" height="24"/></g>
-            <g><circle cx="200" cy="480" r="16" fill="#3462ce"/><use href="#pi" x="188" y="468" width="24" height="24"/></g>
-            <g><circle cx="295" cy="480" r="16" fill="#2a52be"/><use href="#pi" x="283" y="468" width="24" height="24"/></g>
-            <g><circle cx="352" cy="478" r="16" fill="#3462ce"/><use href="#pi" x="340" y="466" width="24" height="24"/></g>
-            <g><circle cx="415" cy="465" r="16" fill="#2a52be"/><use href="#pi" x="403" y="453" width="24" height="24"/></g>
-            <!-- L2 nodes (r=26, anello medio) -->
-            <g><circle cx="80"  cy="100" r="26" fill="#2a52be"/><use href="#pi" x="67"  y="87"  width="26" height="26"/></g>
-            <g><circle cx="162" cy="62"  r="26" fill="#3462ce"/><use href="#pi" x="149" y="49"  width="26" height="26"/></g>
-            <g><circle cx="72"  cy="210" r="26" fill="#2a52be"/><use href="#pi" x="59"  y="197" width="26" height="26"/></g>
-            <g><circle cx="342" cy="62"  r="26" fill="#3462ce"/><use href="#pi" x="329" y="49"  width="26" height="26"/></g>
-            <g><circle cx="428" cy="105" r="26" fill="#2a52be"/><use href="#pi" x="415" y="92"  width="26" height="26"/></g>
-            <g><circle cx="432" cy="215" r="26" fill="#3462ce"/><use href="#pi" x="419" y="202" width="26" height="26"/></g>
-            <g><circle cx="148" cy="435" r="26" fill="#2a52be"/><use href="#pi" x="135" y="422" width="26" height="26"/></g>
-            <g><circle cx="252" cy="452" r="26" fill="#3462ce"/><use href="#pi" x="239" y="439" width="26" height="26"/></g>
-            <g><circle cx="360" cy="435" r="26" fill="#2a52be"/><use href="#pi" x="347" y="422" width="26" height="26"/></g>
-            <!-- L1 nodes (r=38, anello vicino) -->
-            <g><circle cx="165" cy="162" r="38" fill="#1e3fa0" filter="url(#glow2)"/><use href="#pi" x="146" y="143" width="38" height="38"/></g>
-            <g><circle cx="342" cy="162" r="38" fill="#1a3a90" filter="url(#glow2)"/><use href="#pi" x="323" y="143" width="38" height="38"/></g>
-            <g><circle cx="248" cy="358" r="38" fill="#1e3fa0" filter="url(#glow2)"/><use href="#pi" x="229" y="339" width="38" height="38"/></g>
-            <!-- Center -->
-            <circle cx="250" cy="250" r="70" fill="#25D366" filter="url(#glow2)">
-              <animate attributeName="r" values="67;72;67" dur="3s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="1;0.88;1" dur="3s" repeatCount="indefinite"/>
-            </circle>
-            <text x="250" y="244" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="Outfit,sans-serif">La tua</text>
-            <text x="250" y="265" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="Outfit,sans-serif">rete</text>
-          </svg>
+        <!-- Sinistra: il problema -->
+        <div class="problema-left">
+          <p class="problema-badge">
+            <span class="problema-badge-line"></span>
+            Il problema che conosci
+          </p>
+          <h2 class="problema-title">Ti sei già <span class="highlight">bruciato</span> una volta?</h2>
+          <p class="problema-subtitle">Hai costruito una rete, investito tempo e contatti, e poi hai perso tutto perché l'azienda non era strutturata.</p>
+          <ul class="problema-list">
+            <li>Piano compensi cambiato senza preavviso</li>
+            <li>Gestionale lento, contratti persi per errori tecnici</li>
+            <li>Nessuna formazione seria, solo promesse</li>
+            <li>Azienda sparita nel nulla dopo 18 mesi</li>
+          </ul>
+          <div class="problema-trust">
+            ★ Operativi e strutturati da oltre 10 anni nel settore
+          </div>
         </div>
 
-        <!-- Destra: testo -->
-        <div class="brands-text-area">
-          <h3 style="font-size:1.45rem;font-weight:700;margin-bottom:1.2rem;line-height:1.4;background:linear-gradient(to right,#25D366,#1a1a2e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Crea una rete esponenziale con un'azienda nel mercato da oltre 10 anni con certificazione dell'Avedisco.</h3>
-          <p>Tutto si basa sulla valorizzazione e collaborazione tra le persone, che unendosi come Clienti, promuovono un utilizzo consapevole e vantaggioso delle risorse energetiche. I nostri Clienti soddisfatti dei benefici ottenibili, diventano naturalmente promotori di questa rivoluzione energetica, invitando amici e conoscenti ad unirsi alla Community di Union Energia.</p>
-          <p>I vantaggi e i risparmi sulle bollette diventano tangibili quando i Clienti portano nuovi membri nella nostra comunità energetica. Si crea così un <strong>"circolo virtuoso"</strong> che offre a tutti l'opportunità di partecipare e di beneficiare delle stesse condizioni favorevoli per azzerare le bollette.</p>
-          <p>Ogni Cliente ha l'opportunità di formarsi con noi e trasformare la Sharing Economy, anche in una vera e propria <strong>opportunità di lavoro</strong>, grazie al nostro piano compensi.</p>
+        <!-- Destra: la soluzione -->
+        <div class="soluzione-card">
+          <h3 class="soluzione-title">Con noi è diverso.<br>Ecco perché.</h3>
+          <ul class="soluzione-list">
+            <li>Gestionale proprietario — i tuoi contratti sono sempre tracciabili in tempo reale</li>
+            <li>Formazione gratuita su network marketing e acquisizione clienti</li>
+            <li>Piano compensi fisso e trasparente — scritto, non a voce</li>
+            <li>Ricorrenza mensile su ogni contratto attivo, per sempre</li>
+            <li>Struttura che porta già centinaia di contratti ogni mese</li>
+          </ul>
+          <a href="thankyoupage1.html" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span class="btn-text"><strong>Voglio saperne di più</strong></span>
+            <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
         </div>
 
       </div>
