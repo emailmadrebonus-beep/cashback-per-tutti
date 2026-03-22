@@ -332,6 +332,112 @@
         margin-top: 2rem;
       }
     }
+    /* Social proof section */
+    .social-proof-section {
+      background: #1a1a2e;
+      padding: 5rem 0;
+      text-align: center;
+    }
+    .sp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .sp-badge-line {
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: #25D366;
+      flex-shrink: 0;
+    }
+    .sp-number {
+      font-size: clamp(4rem, 10vw, 7rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .sp-title {
+      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .sp-subtitle {
+      font-size: 1rem;
+      color: #94a3b8;
+      max-width: 480px;
+      margin: 0 auto 3rem;
+      line-height: 1.7;
+    }
+    .sp-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      text-align: left;
+    }
+    .sp-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .sp-quote {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      line-height: 1.7;
+      font-style: italic;
+      flex: 1;
+    }
+    .sp-author {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .sp-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(37,211,102,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #25D366;
+      flex-shrink: 0;
+    }
+    .sp-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .sp-location {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-top: 0.15rem;
+    }
+    .sp-stat {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #25D366;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1rem;
+    }
+    @media (max-width: 768px) {
+      .sp-cards { grid-template-columns: 1fr; }
+    }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -633,17 +739,52 @@
     </div>
   </div>
 
-  <!-- ===== WE SHARE CONVENTION ===== -->
-  <section style="padding:1rem 0 3rem;">
+  <!-- ===== SOCIAL PROOF ===== -->
+  <section class="social-proof-section">
     <div class="container">
-      <div class="chi-siamo-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
-        <div>
-          <img src="we-share-union.jpg" alt="Convention We Share Union Energia" style="width:100%;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.12);">
+      <p class="sp-badge"><span class="sp-badge-line"></span>La community cresce</p>
+      <div class="sp-number">100.000+</div>
+      <h2 class="sp-title">persone hanno già scelto di fare rete con noi</h2>
+      <p class="sp-subtitle">Il mercato energetico italiano cresce di mese in mese. Chi entra oggi costruisce una rendita. Chi aspetta, lascia spazio agli altri.</p>
+
+      <div class="sp-cards">
+
+        <div class="sp-card">
+          <p class="sp-quote">"Avevo già provato con un'altra azienda e avevo perso tutti i miei contatti. Qui il gestionale funziona davvero e il piano compensi è esattamente quello che mi avevano detto."</p>
+          <div class="sp-author">
+            <div class="sp-avatar">MR</div>
+            <div>
+              <div class="sp-name">Marco R.</div>
+              <div class="sp-location">Milano — entrato 8 mesi fa</div>
+            </div>
+          </div>
+          <div class="sp-stat">47 contratti al 3° mese</div>
         </div>
-        <div>
-          <h3 style="font-size:1.45rem;font-weight:700;margin-bottom:1.2rem;line-height:1.4;background:linear-gradient(to right,#25D366,#1a1a2e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Chi siamo</h3>
-          <p style="font-size:1.05rem;line-height:1.85;color:#1a1a2e;">Dal <strong>2020</strong> inizia una crescita esponenziale grazie al modello di <strong>sharing economy</strong>, coinvolgendo clienti consapevoli che partecipano agli utili aziendali. Questo approccio ha creato un forte legame di fidelizzazione, promuovendo un consumo energetico <strong>sostenibile</strong> e <strong>responsabile</strong>.</p>
+
+        <div class="sp-card">
+          <p class="sp-quote">"La formazione gratuita è stata la svolta. Non sapevo niente di network marketing, ora ho una rete che lavora anche quando sono offline."</p>
+          <div class="sp-author">
+            <div class="sp-avatar">SB</div>
+            <div>
+              <div class="sp-name">Sara B.</div>
+              <div class="sp-location">Roma — entrata 6 mesi fa</div>
+            </div>
+          </div>
+          <div class="sp-stat">€800/mese di ricorrenza</div>
         </div>
+
+        <div class="sp-card">
+          <p class="sp-quote">"Cercavo un'azienda seria con cui portare i miei contatti energia. Ho trovato struttura, trasparenza e un team che risponde davvero."</p>
+          <div class="sp-author">
+            <div class="sp-avatar">LF</div>
+            <div>
+              <div class="sp-name">Luca F.</div>
+              <div class="sp-location">Torino — entrato 1 anno fa</div>
+            </div>
+          </div>
+          <div class="sp-stat">Livello 3 attivo</div>
+        </div>
+
       </div>
     </div>
   </section>
