@@ -673,6 +673,28 @@
     letter-spacing: 0.05em;
     color: #c8a84b;
   }
+
+  /* ── UN SOLO PASSO ── */
+  .passo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    text-align: left;
+  }
+  @media (max-width: 768px) {
+    .passo-section { padding-top: 64px !important; padding-bottom: 64px !important; }
+    .passo-grid { grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+    .passo-grid .locked-video-box { height: auto; min-height: 130px; }
+  }
+
+  /* ── CALCOLATORE + HERO su schermi piccoli ── */
+  @media (max-width: 480px) {
+    .hero-title { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+    .ic-sliders { grid-template-columns: 1fr; }
+    .ic-row { grid-template-columns: 52px 1fr 58px; }
+    .ic-people { display: none; }
+  }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1037,7 +1059,7 @@
   </section><!-- end social-proof-section -->
 
   <!-- ===== UN SOLO PASSO ===== -->
-  <section style="background:#0a0a0a; padding: 100px 24px; text-align: center; position: relative; overflow: hidden;">
+  <section class="passo-section" style="background:#0a0a0a; padding: 100px 24px; text-align: center; position: relative; overflow: hidden;">
     <div class="hero-bg" aria-hidden="true">
       <div class="mesh-gradient"></div>
       <div class="grid-bg"></div>
@@ -1050,7 +1072,7 @@
       </h2>
 
       <!-- Layout: locked-box sx + form dx -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; text-align: left;">
+      <div class="passo-grid">
 
         <!-- Sinistra: locked video box -->
         <div class="locked-video-box" style="height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; border: 1.5px solid rgba(255,255,255,0.5);">
