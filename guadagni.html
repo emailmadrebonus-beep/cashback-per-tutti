@@ -765,6 +765,10 @@
               <span class="ic-total-label">Potenziale Totale Una Tantum</span>
               <span class="ic-total-amount" id="icTotalUna">€100.000</span>
             </div>
+            <div class="ic-total-row" style="margin-top:8px;">
+              <span class="ic-total-label">Potenziale Totale Mensile</span>
+              <span class="ic-total-amount" id="icTotalMensile">€39.060</span>
+            </div>
             <div class="ic-rec-grid">
               <div class="ic-rec-card">
                 <p class="ic-rec-label">Ricorrenza / mese</p>
@@ -1180,8 +1184,9 @@
         animTo('a'+i, amountEls[i], runningTotal, fmtEur);
       });
 
-      animTo('una',  document.getElementById('icTotalUna'), runningTotal,   fmtEur);
-      animTo('rec1', document.getElementById('icA1'),       totalPpl * 1,   fmtEur);
+      animTo('una',  document.getElementById('icTotalUna'),      runningTotal,   fmtEur);
+      animTo('men',  document.getElementById('icTotalMensile'),  totalPpl * 1,   fmtEur);
+      animTo('rec1', document.getElementById('icA1'),            totalPpl * 1,   fmtEur);
       animTo('rec2', document.getElementById('icA2'),       totalPpl * 1.5, fmtEur);
     }
 
