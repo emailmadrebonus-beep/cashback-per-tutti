@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "routes": [
+    { "src": "/", "dest": "/guadagni.html" },
     { "src": "/guadagni(\\.html)?", "dest": "/guadagni.html" },
     { "src": "/thankyoupage1(\\.html)?", "dest": "/thankyoupage1.html" },
     { "src": ".*\\.(css|js|jpg|jpeg|png|gif|svg|webp|mp4|ico|woff|woff2|ttf|eot|otf)(\\?.*)?$", "dest": "$0" },
