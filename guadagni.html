@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cashback per Tutti</title>
-  <meta name="description" content="Cashback per Tutti — risparmia su ogni acquisto con cashback e gift card dai tuoi brand preferiti.">
-  <link rel="icon" type="image/png" href="logo-cashback.png">
+  <title>Network Marketing Energia — Costruisci la tua rete e guadagna | Cashback per Tutti</title>
+  <meta name="description" content="Entra nel settore energetico con un piano compensi su 6 livelli, formazione gratuita e struttura operativa da oltre 10 anni. Hai contatti nel settore dell'energia? Usali.">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cashbackpertutti.com/guadagni">
+  <meta property="og:title" content="Costruisci la tua rete nel settore energia — Guadagna con Cashback per Tutti">
+  <meta property="og:description" content="Piano compensi su 6 livelli, ricorrenza mensile su ogni contratto, formazione gratuita. Oltre 100.000 persone già nella rete. Scrivici su WhatsApp.">
+  <meta property="og:image" content="https://www.cashbackpertutti.com/network-energetico-logo.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Costruisci la tua rete nel settore energia">
+  <meta name="twitter:description" content="Piano compensi su 6 livelli, ricorrenza mensile, formazione gratuita. Entra con Cashback per Tutti.">
+  <meta name="twitter:image" content="https://www.cashbackpertutti.com/network-energetico-logo.png">
+  <link rel="icon" type="image/png" href="network-energetico-logo.png">
   <!-- Meta Pixel -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -32,22 +43,62 @@
   <!-- End TikTok Pixel -->
   <link rel="stylesheet" href="style.css">
   <style>
+    /* ── DARK RED THEME OVERRIDES ── */
+    :root {
+      --bg:          #0a0a0a;
+      --bg-card:     rgba(255,255,255,0.04);
+      --border:      rgba(255,255,255,0.09);
+      --accent:      #25D366;
+      --accent-dim:  rgba(37,211,102,0.10);
+      --accent-glow: rgba(37,211,102,0.25);
+      --text:        #f5f5f5;
+      --text-muted:  #94a3b8;
+    }
+    .mesh-gradient {
+      background:
+        radial-gradient(ellipse 70% 65% at 50% 38%, rgba(229,62,62,0.18) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 40% at 15% 70%, rgba(229,62,62,0.06) 0%, transparent 65%);
+    }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+    }
+    .hero-badge {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #f5f5f5;
+    }
+    .nav { background: transparent; }
+    .nav.scrolled, .nav.mobile-open { background: rgba(10,10,10,0.92) !important; }
+    .btn-primary {
+      background: rgba(37, 211, 102, 0.12) !important;
+      border: 1.5px solid rgba(37, 211, 102, 0.5) !important;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 24px rgba(37, 211, 102, 0.15) !important;
+      color: #f5f5f5 !important;
+    }
+    .btn-primary:hover {
+      background: rgba(37, 211, 102, 0.20) !important;
+      box-shadow: 0 0 32px rgba(37, 211, 102, 0.25) !important;
+    }
+
     .brands-text-area p {
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.8;
       margin-bottom: 1.5rem;
-      color: #1a1a2e;
+      color: #f5f5f5;
     }
     .brands-text-area p:last-child {
       margin-bottom: 0;
     }
     .highlight-yellow {
-      color: #d4a017;
+      color: #e53e3e;
     }
     .brands-text-area strong {
       font-weight: 600;
-      color: #25D366;
+      color: #e53e3e;
     }
     #perche .why-layout {
       display: block;
@@ -89,7 +140,7 @@
     }
     .network-section {
       padding: 4rem 0 2rem;
-      background: #f5f5f5;
+      background: #0a0a0a;
     }
     .network-svg {
       width: 100%;
@@ -125,7 +176,7 @@
       font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.12em;
-      color: #64748b;
+      color: #94a3b8;
       text-transform: uppercase;
       margin-bottom: 1.2rem;
     }
@@ -133,19 +184,19 @@
       display: inline-block;
       width: 28px;
       height: 2px;
-      background: #25D366;
+      background: #e53e3e;
       flex-shrink: 0;
     }
     .problema-title {
       font-size: 2.4rem;
       font-weight: 800;
       line-height: 1.2;
-      color: #1a1a2e;
+      color: #f5f5f5;
       margin-bottom: 1.2rem;
     }
     .problema-subtitle {
       font-size: 1rem;
-      color: #64748b;
+      color: #f5f5f5;
       line-height: 1.7;
       margin-bottom: 1.8rem;
     }
@@ -162,7 +213,7 @@
       align-items: flex-start;
       gap: 0.65rem;
       font-size: 0.95rem;
-      color: #1a1a2e;
+      color: #f5f5f5;
       line-height: 1.5;
     }
     .problema-list li::before {
@@ -176,14 +227,23 @@
     .problema-trust {
       display: inline-block;
       padding: 0.8rem 1.2rem;
-      background: rgba(37,211,102,0.06);
-      border: 1px solid rgba(37,211,102,0.25);
+      background: rgba(229,62,62,0.06);
+      border: 1px solid rgba(229,62,62,0.25);
       border-radius: 8px;
       font-size: 0.82rem;
-      color: #64748b;
+      color: #94a3b8;
+    }
+    .problema-glass {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
     }
     .soluzione-card {
-      background: #1a1a2e;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 16px;
       padding: 2.5rem 2rem;
     }
@@ -207,7 +267,7 @@
       align-items: flex-start;
       gap: 0.75rem;
       font-size: 0.95rem;
-      color: #e2e8f0;
+      color: #f5f5f5;
       line-height: 1.55;
     }
     .soluzione-list li::before {
@@ -226,7 +286,7 @@
     .hero-microcopy {
       margin-top: 0.85rem;
       font-size: 0.8rem;
-      color: #64748b;
+      color: #94a3b8;
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -245,10 +305,13 @@
       justify-content: center;
     }
     .comp-plan {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 16px;
       padding: 1.8rem;
-      box-shadow: 0 4px 32px rgba(0,0,0,0.09);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35);
       width: 100%;
       max-width: 460px;
     }
@@ -256,7 +319,7 @@
       font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.12em;
-      color: #64748b;
+      color: rgba(255,255,255,0.55);
       text-transform: uppercase;
       margin-bottom: 1.2rem;
     }
@@ -265,7 +328,7 @@
       align-items: center;
       gap: 0.75rem;
       padding: 0.65rem 0.8rem;
-      background: #f8f9fa;
+      background: rgba(255,255,255,0.10);
       border-radius: 8px;
       margin-bottom: 0.4rem;
     }
@@ -273,14 +336,14 @@
       font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.06em;
-      color: #1a1a2e;
+      color: #f5f5f5;
       text-transform: uppercase;
       min-width: 68px;
     }
     .comp-bar-wrap {
       flex: 1;
       height: 4px;
-      background: #e2e8f0;
+      background: rgba(255,255,255,0.18);
       border-radius: 2px;
       overflow: hidden;
     }
@@ -291,22 +354,22 @@
     }
     .comp-people {
       font-size: 0.78rem;
-      color: #64748b;
+      color: rgba(255,255,255,0.55);
       min-width: 90px;
       text-align: right;
     }
     .comp-amount {
       font-size: 0.95rem;
       font-weight: 700;
-      color: #1a1a2e;
+      color: #f5f5f5;
       min-width: 62px;
       text-align: right;
     }
     .comp-total {
       margin-top: 0.8rem;
       padding: 1rem 1.2rem;
-      background: rgba(37, 211, 102, 0.06);
-      border: 1.5px solid rgba(37, 211, 102, 0.35);
+      background: rgba(37, 211, 102, 0.12);
+      border: 1.5px solid rgba(37, 211, 102, 0.5);
       border-radius: 10px;
       display: flex;
       justify-content: space-between;
@@ -317,7 +380,7 @@
       font-size: 0.7rem;
       font-weight: 600;
       letter-spacing: 0.09em;
-      color: #64748b;
+      color: rgba(255,255,255,0.7);
       text-transform: uppercase;
     }
     .comp-total-amount {
@@ -334,9 +397,13 @@
     }
     /* Social proof section */
     .social-proof-section {
-      background: #1a1a2e;
+      background: #f5f5f5;
       padding: 5rem 0;
       text-align: center;
+      position: relative;
+      z-index: 2;
+      border-radius: 32px 32px 0 0;
+      margin-top: -32px;
     }
     .sp-badge {
       display: inline-flex;
@@ -353,25 +420,25 @@
       display: inline-block;
       width: 28px;
       height: 2px;
-      background: #25D366;
+      background: #e53e3e;
       flex-shrink: 0;
     }
     .sp-number {
       font-size: clamp(4rem, 10vw, 7rem);
       font-weight: 800;
-      color: #fff;
+      color: #0a0a0a;
       line-height: 1;
       margin-bottom: 0.5rem;
     }
     .sp-title {
       font-size: clamp(1.2rem, 2.5vw, 1.7rem);
       font-weight: 700;
-      color: #fff;
+      color: #0a0a0a;
       margin-bottom: 1rem;
     }
     .sp-subtitle {
       font-size: 1rem;
-      color: #94a3b8;
+      color: #64748b;
       max-width: 480px;
       margin: 0 auto 3rem;
       line-height: 1.7;
@@ -383,7 +450,7 @@
       text-align: left;
     }
     .sp-card {
-      background: rgba(255,255,255,0.05);
+      background: #1a1a1a;
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 14px;
       padding: 1.8rem;
@@ -407,13 +474,13 @@
       width: 42px;
       height: 42px;
       border-radius: 50%;
-      background: rgba(37,211,102,0.18);
+      background: rgba(229,62,62,0.18);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.75rem;
       font-weight: 700;
-      color: #25D366;
+      color: #e53e3e;
       flex-shrink: 0;
     }
     .sp-name {
@@ -423,8 +490,14 @@
     }
     .sp-location {
       font-size: 0.78rem;
-      color: #64748b;
+      color: #94a3b8;
       margin-top: 0.15rem;
+    }
+    .sp-stars {
+      font-size: 1rem;
+      color: #f6c90e;
+      letter-spacing: 2px;
+      margin-bottom: 0.75rem;
     }
     .sp-stat {
       font-size: 0.72rem;
@@ -438,10 +511,172 @@
     @media (max-width: 768px) {
       .sp-cards { grid-template-columns: 1fr; }
     }
+
+
+  /* ── CALCOLATORE INTERATTIVO ── */
+  .ic-sliders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ic-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.4rem;
+  }
+  .ic-label {
+    font-size: 0.63rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.02em;
+  }
+  .ic-val {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1rem;
+    color: #25D366;
+    letter-spacing: 0.06em;
+  }
+  input.ic-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 99px;
+    background: linear-gradient(
+      to right,
+      #25D366 0%, #25D366 var(--fill,0%),
+      rgba(255,255,255,0.18) var(--fill,0%), rgba(255,255,255,0.18) 100%
+    );
+    outline: none;
+    cursor: pointer;
+  }
+  input.ic-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #25D366;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px rgba(37,211,102,0.2), 0 0 8px rgba(37,211,102,0.4);
+  }
+  input.ic-range::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #25D366;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 8px rgba(37,211,102,0.4);
+  }
+  .ic-row {
+    display: grid;
+    grid-template-columns: 66px 1fr 86px 60px;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.55rem 0.7rem;
+    background: rgba(255,255,255,0.10);
+    border-radius: 8px;
+    margin-bottom: 0.35rem;
+  }
+  .ic-row-name {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #f5f5f5;
+    text-transform: uppercase;
+  }
+  .ic-bar-track {
+    height: 4px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .ic-bar-fill {
+    height: 100%;
+    background: #25D366;
+    border-radius: 99px;
+    width: 0%;
+    transition: width 0.45s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 0 6px rgba(37,211,102,0.35);
+  }
+  .ic-people {
+    font-size: 0.63rem;
+    color: rgba(255,255,255,0.45);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .ic-amount {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    color: #f5f5f5;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .ic-total-box {
+    margin-top: 0.7rem;
+    padding: 0.85rem 1.1rem;
+    background: rgba(37,211,102,0.12);
+    border: 1.5px solid rgba(37,211,102,0.5);
+    border-radius: 10px;
+  }
+  .ic-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .ic-total-label {
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.65);
+    text-transform: uppercase;
+  }
+  .ic-total-amount {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.65rem;
+    letter-spacing: 0.05em;
+    color: #25D366;
+    white-space: nowrap;
+  }
+  .ic-rec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem;
+    margin-top: 0.5rem;
+  }
+  .ic-rec-card {
+    background: rgba(255,255,255,0.06);
+    border-radius: 7px;
+    padding: 0.6rem 0.75rem;
+  }
+  .ic-rec-label {
+    font-size: 0.57rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+  }
+  .ic-rec-sub {
+    font-size: 0.57rem;
+    color: rgba(255,255,255,0.28);
+    margin-top: 1px;
+    margin-bottom: 3px;
+  }
+  .ic-rec-val {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+    color: #c8a84b;
+  }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -451,7 +686,7 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="nav" id="nav">
     <div class="nav-container">
-      <a href="#home" class="nav-logo"><img src="logo-cashback.png" alt="Cashback per Tutti"><span>Cashback per Tutti</span></a>
+      <a href="#home" class="nav-logo"><img src="network-energetico-logo.png" alt="Cashback per Tutti"><span>Cashback per Tutti</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="thankyoupage1.html" class="nav-cta">Scrivici su WhatsApp</a></li>
       </ul>
@@ -475,15 +710,15 @@
       <div class="hero-text">
         <div class="hero-badge">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-            <path d="M6 0L7.17 4.83L12 6L7.17 7.17L6 12L4.83 7.17L0 6L4.83 4.83L6 0Z" fill="#25D366"/>
+            <path d="M6 0L7.17 4.83L12 6L7.17 7.17L6 12L4.83 7.17L0 6L4.83 4.83L6 0Z" fill="#f5f5f5"/>
           </svg>
           Network Marketing Energia
         </div>
         <h1 class="hero-title">
-          Costruisci la tua rete.<br><span class="highlight-no-italic">Al resto</span> pensiamo noi.
+          Hai contatti nel settore dell'energia?<br><span class="highlight-no-italic">Trasformali in rendita mensile.</span>
         </h1>
         <p class="hero-subtitle">
-          Il settore energetico cresce ogni anno. La domanda è: stai guadagnando tu, o qualcun altro?
+          Piano compensi su 6 livelli, ricorrenza garantita su ogni contratto attivo, formazione gratuita da subito. Il settore cresce — entra ora.
         </p>
         <div class="hero-cta">
           <a href="thankyoupage1.html" class="btn btn-primary">
@@ -493,67 +728,67 @@
           </a>
           <p class="hero-microcopy">
             <span class="microcopy-dot"></span>
-            Risposta garantita entro 30 minuti — nessun impegno
+            Ricevi il video spiegazione
           </p>
         </div>
       </div>
 
-      <!-- Right: piano compensi -->
+      <!-- Right: calcolatore piano compensi interattivo -->
       <div class="hero-visual comp-plan-wrap">
         <div class="comp-plan">
-          <p class="comp-plan-label">Piano compensi — 6 livelli</p>
+          <p class="comp-plan-label">Piano Compensi — 6 Livelli</p>
 
-          <div class="comp-row">
-            <span class="comp-row-name">Diretti</span>
-            <div class="comp-bar-wrap"><div class="comp-bar" style="width:8%"></div></div>
-            <span class="comp-people">10 persone</span>
-            <span class="comp-amount">€500</span>
-          </div>
-          <div class="comp-row">
-            <span class="comp-row-name">Livello 2</span>
-            <div class="comp-bar-wrap"><div class="comp-bar" style="width:16%"></div></div>
-            <span class="comp-people">50 persone</span>
-            <span class="comp-amount">€750</span>
-          </div>
-          <div class="comp-row">
-            <span class="comp-row-name">Livello 3</span>
-            <div class="comp-bar-wrap"><div class="comp-bar" style="width:28%"></div></div>
-            <span class="comp-people">250 persone</span>
-            <span class="comp-amount">€1.250</span>
-          </div>
-          <div class="comp-row">
-            <span class="comp-row-name">Livello 4</span>
-            <div class="comp-bar-wrap"><div class="comp-bar" style="width:42%"></div></div>
-            <span class="comp-people">1.250 persone</span>
-            <span class="comp-amount">€3.750</span>
-          </div>
-          <div class="comp-row">
-            <span class="comp-row-name">Livello 5</span>
-            <div class="comp-bar-wrap"><div class="comp-bar" style="width:60%"></div></div>
-            <span class="comp-people">6.250 persone</span>
-            <span class="comp-amount">€15.625</span>
-          </div>
-          <div class="comp-row">
-            <span class="comp-row-name">Livello 6</span>
-            <div class="comp-bar-wrap"><div class="comp-bar" style="width:80%"></div></div>
-            <span class="comp-people">31.250 persone</span>
-            <span class="comp-amount">€78.125</span>
+          <!-- Sliders -->
+          <div class="ic-sliders">
+            <div>
+              <div class="ic-label-row">
+                <span class="ic-label">Persone che porti tu</span>
+                <span class="ic-val" id="icVal1">10</span>
+              </div>
+              <input type="range" class="ic-range" id="icSlider1" min="3" max="15" step="1" value="10">
+            </div>
+            <div>
+              <div class="ic-label-row">
+                <span class="ic-label">Portate da ognuno</span>
+                <span class="ic-val" id="icVal2">5</span>
+              </div>
+              <input type="range" class="ic-range" id="icSlider2" min="2" max="5" step="1" value="5">
+            </div>
           </div>
 
-          <div class="comp-total">
-            <span class="comp-total-label">Potenziale totale una tantum</span>
-            <span class="comp-total-amount">€100.000</span>
+          <!-- Righe livelli (generate da JS) -->
+          <div id="icLevels"></div>
+
+          <!-- Totali -->
+          <div class="ic-total-box">
+            <div class="ic-total-row">
+              <span class="ic-total-label">Potenziale Totale Una Tantum</span>
+              <span class="ic-total-amount" id="icTotalUna">€100.000</span>
+            </div>
+            <div class="ic-rec-grid">
+              <div class="ic-rec-card">
+                <p class="ic-rec-label">Ricorrenza / mese</p>
+                <p class="ic-rec-sub">Anno 1 · €1 / persona</p>
+                <p class="ic-rec-val" id="icA1">€39.060</p>
+              </div>
+              <div class="ic-rec-card">
+                <p class="ic-rec-label">Ricorrenza / mese</p>
+                <p class="ic-rec-sub">Anno 2 · €1,50 / persona</p>
+                <p class="ic-rec-val" id="icA2">€58.590</p>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
 
     </div>
   </section>
 
-
   <!-- ===== PROBLEMA / SOLUZIONE ===== -->
   <section class="services" id="servizi" style="padding-top:4rem;padding-bottom:4rem;">
     <div class="container">
+      <div class="problema-glass">
       <div class="problema-grid">
 
         <!-- Sinistra: il problema -->
@@ -570,9 +805,6 @@
             <li>Nessuna formazione seria, solo promesse</li>
             <li>Azienda sparita nel nulla dopo 18 mesi</li>
           </ul>
-          <div class="problema-trust">
-            ★ Operativi e strutturati da oltre 10 anni nel settore
-          </div>
         </div>
 
         <!-- Destra: la soluzione -->
@@ -582,7 +814,7 @@
             <li>Gestionale proprietario — i tuoi contratti sono sempre tracciabili in tempo reale</li>
             <li>Formazione gratuita su network marketing e acquisizione clienti</li>
             <li>Piano compensi fisso e trasparente — scritto, non a voce</li>
-            <li>Ricorrenza mensile su ogni contratto attivo, per sempre</li>
+            <li>Ricorrenza mensile su ogni contratto attivo</li>
             <li>Struttura che porta già centinaia di contratti ogni mese</li>
           </ul>
           <a href="thankyoupage1.html" class="btn btn-primary">
@@ -592,6 +824,7 @@
           </a>
         </div>
 
+      </div>
       </div>
     </div>
   </section>
@@ -744,59 +977,17 @@
     <div class="container">
       <p class="sp-badge"><span class="sp-badge-line"></span>La community cresce</p>
       <div class="sp-number">100.000+</div>
-      <h2 class="sp-title">persone hanno già scelto di fare rete con noi</h2>
+      <h2 class="sp-title">persone già fanno parte della rete con noi</h2>
       <p class="sp-subtitle">Il mercato energetico italiano cresce di mese in mese. Chi entra oggi costruisce una rendita. Chi aspetta, lascia spazio agli altri.</p>
 
-      <div class="sp-cards">
-
-        <div class="sp-card">
-          <p class="sp-quote">"Avevo già provato con un'altra azienda e avevo perso tutti i miei contatti. Qui il gestionale funziona davvero e il piano compensi è esattamente quello che mi avevano detto."</p>
-          <div class="sp-author">
-            <div class="sp-avatar">MR</div>
-            <div>
-              <div class="sp-name">Marco R.</div>
-              <div class="sp-location">Milano — entrato 8 mesi fa</div>
-            </div>
-          </div>
-          <div class="sp-stat">47 contratti al 3° mese</div>
-        </div>
-
-        <div class="sp-card">
-          <p class="sp-quote">"La formazione gratuita è stata la svolta. Non sapevo niente di network marketing, ora ho una rete che lavora anche quando sono offline."</p>
-          <div class="sp-author">
-            <div class="sp-avatar">SB</div>
-            <div>
-              <div class="sp-name">Sara B.</div>
-              <div class="sp-location">Roma — entrata 6 mesi fa</div>
-            </div>
-          </div>
-          <div class="sp-stat">€800/mese di ricorrenza</div>
-        </div>
-
-        <div class="sp-card">
-          <p class="sp-quote">"Cercavo un'azienda seria con cui portare i miei contatti energia. Ho trovato struttura, trasparenza e un team che risponde davvero."</p>
-          <div class="sp-author">
-            <div class="sp-avatar">LF</div>
-            <div>
-              <div class="sp-name">Luca F.</div>
-              <div class="sp-location">Torino — entrato 1 anno fa</div>
-            </div>
-          </div>
-          <div class="sp-stat">Livello 3 attivo</div>
-        </div>
-
-      </div>
     </div>
-  </section>
 
-  <!-- ===== PERCHÉ LAVORARE CON NOI ===== -->
-  <section style="padding:3rem 0 4rem;">
-    <div class="container">
-      <h2 style="text-align:center;font-size:2rem;font-weight:700;color:#1a1a2e;margin-bottom:2.5rem;">Perché lavorare con noi</h2>
+      <div class="container" style="margin-top:4rem;">
+      <h2 style="text-align:center;font-size:2rem;font-weight:700;color:#0a0a0a;margin-bottom:2.5rem;">Perché lavorare con noi</h2>
       <div class="perche-cards-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
 
         <!-- Card 1 -->
-        <div style="background:#fff;border-radius:16px;padding:2rem 1.8rem;box-shadow:0 4px 24px rgba(0,0,0,0.07),0 0 0 1.5px #25D366,0 0 12px rgba(37,211,102,0.25);text-align:center;">
+        <div style="background:#111111;border-radius:16px;padding:2rem 1.8rem;box-shadow:0 4px 24px rgba(0,0,0,0.4),0 0 0 1.5px #25D366,0 0 12px rgba(37,211,102,0.2);text-align:center;">
           <div style="width:64px;height:64px;background:rgba(37,211,102,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;">
             <!-- Icona: euro/trending up -->
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -804,12 +995,12 @@
               <polyline points="17 6 23 6 23 12" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3 style="font-size:1.1rem;font-weight:700;color:#1a1a2e;margin-bottom:0.5rem;">Alte provvigioni</h3>
-          <p style="font-size:0.9rem;color:#64748b;line-height:1.6;">Guadagna commissioni competitive su ogni contratto, con un piano compensi trasparente e in continua crescita.</p>
+          <h3 style="font-size:1.1rem;font-weight:700;color:#f5f5f5;margin-bottom:0.5rem;">Alte provvigioni</h3>
+          <p style="font-size:0.9rem;color:#94a3b8;line-height:1.6;">Guadagna commissioni competitive su ogni contratto, con un piano compensi trasparente e in continua crescita.</p>
         </div>
 
         <!-- Card 2 -->
-        <div style="background:#fff;border-radius:16px;padding:2rem 1.8rem;box-shadow:0 4px 24px rgba(0,0,0,0.07),0 0 0 1.5px #25D366,0 0 12px rgba(37,211,102,0.25);text-align:center;">
+        <div style="background:#111111;border-radius:16px;padding:2rem 1.8rem;box-shadow:0 4px 24px rgba(0,0,0,0.4),0 0 0 1.5px #25D366,0 0 12px rgba(37,211,102,0.2);text-align:center;">
           <div style="width:64px;height:64px;background:rgba(37,211,102,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;">
             <!-- Icona: graduation cap -->
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -817,12 +1008,12 @@
               <path d="M6 12v5c0 0 2.5 3 6 3s6-3 6-3v-5" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3 style="font-size:1.1rem;font-weight:700;color:#1a1a2e;margin-bottom:0.5rem;">Formazione esclusiva</h3>
-          <p style="font-size:0.9rem;color:#64748b;line-height:1.6;">Accedi a corsi, materiali e supporto dedicato per crescere professionalmente e massimizzare i tuoi risultati.</p>
+          <h3 style="font-size:1.1rem;font-weight:700;color:#f5f5f5;margin-bottom:0.5rem;">Formazione esclusiva</h3>
+          <p style="font-size:0.9rem;color:#94a3b8;line-height:1.6;">Accedi a corsi, materiali e supporto dedicato per crescere professionalmente e massimizzare i tuoi risultati.</p>
         </div>
 
         <!-- Card 3 -->
-        <div style="background:#fff;border-radius:16px;padding:2rem 1.8rem;box-shadow:0 4px 24px rgba(0,0,0,0.07),0 0 0 1.5px #25D366,0 0 12px rgba(37,211,102,0.25);text-align:center;">
+        <div style="background:#111111;border-radius:16px;padding:2rem 1.8rem;box-shadow:0 4px 24px rgba(0,0,0,0.4),0 0 0 1.5px #25D366,0 0 12px rgba(37,211,102,0.2);text-align:center;">
           <div style="width:64px;height:64px;background:rgba(37,211,102,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;">
             <!-- Icona: gift -->
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -833,47 +1024,45 @@
               <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3 style="font-size:1.1rem;font-weight:700;color:#1a1a2e;margin-bottom:0.5rem;">Bonus per te e il cliente</h3>
-          <p style="font-size:0.9rem;color:#64748b;line-height:1.6;">Premi e incentivi sia per te che per i clienti che porti, creando un vantaggio reciproco che fidelizza la rete.</p>
+          <h3 style="font-size:1.1rem;font-weight:700;color:#f5f5f5;margin-bottom:0.5rem;">Bonus per te e il cliente</h3>
+          <p style="font-size:0.9rem;color:#94a3b8;line-height:1.6;">Premi e incentivi sia per te che per i clienti che porti, creando un vantaggio reciproco che fidelizza la rete.</p>
         </div>
 
       </div>
     </div>
-  </section>
+  </section><!-- end social-proof-section -->
 
-  <!-- ===== CTA VIDEO ===== -->
-  <section class="contact" id="cta-video" style="padding-top:0;">
-    <div class="container">
-      <div class="contact-wrapper">
+  <!-- ===== UN SOLO PASSO ===== -->
+  <section style="background:#0a0a0a; padding: 100px 24px; text-align: center; position: relative; overflow: hidden;">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="mesh-gradient"></div>
+      <div class="grid-bg"></div>
+    </div>
+    <div style="max-width: 700px; margin: 0 auto; position: relative; z-index: 1;">
+      <p style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #25D366; font-weight: 600; margin-bottom: 24px;">— UN SOLO PASSO —</p>
+      <h2 style="font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 900; line-height: 1.1; color: #f5f5f5; margin-bottom: 48px;">
+        Hai contatti nel settore dell'energia?<br>
+        <span style="text-transform: uppercase; color: #25D366;">USALI.</span>
+      </h2>
 
-        <!-- Sinistra: video bloccato -->
-        <div class="contact-video-side">
-          <div class="locked-video-box">
-            <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
-            <p class="locked-video-text">Ricevi il video gratuito su WhatsApp</p>
-          </div>
+      <!-- Layout: locked-box sx + form dx -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; text-align: left;">
+
+        <!-- Sinistra: locked video box -->
+        <div class="locked-video-box" style="height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; border: 1.5px solid rgba(255,255,255,0.5);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:48px;height:48px;" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <p style="color:#f5f5f5; font-weight:700; font-size:1rem; text-align:center; margin:0;">Ricevi il video gratuito su WhatsApp</p>
         </div>
 
-        <!-- Destra: form + WhatsApp -->
-        <div class="contact-form-side">
-          <form class="contact-form" id="ctaFormGuadagni">
-            <div class="form-group">
-              <label for="nome-g">Il tuo nome</label>
-              <input type="text" id="nome-g" name="nome" placeholder="Mario Rossi" required>
-            </div>
-            <div class="form-group">
-              <label for="email-g">Email</label>
-              <input type="email" id="email-g" name="email" placeholder="mario@email.it" required>
-            </div>
-          </form>
-          <a href="thankyoupage1.html" class="whatsapp-btn">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-            Scrivici su WhatsApp
+        <!-- Destra: bottone -->
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <a href="thankyoupage1.html" class="btn btn-primary" style="width:100%; justify-content:center; gap:12px; padding:18px 28px; border-radius:50px; text-decoration:none;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span class="btn-text"><strong>Scrivici su WhatsApp</strong><small>Voglio ricevere il video spiegazione</small></span>
+            <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
           </a>
         </div>
 
@@ -886,12 +1075,117 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <a href="#home" class="nav-logo"><img src="logo-cashback.png" alt="Cashback per Tutti"></a>
+        <a href="#home" class="nav-logo"><img src="network-energetico-logo.png" alt="Cashback per Tutti"></a>
         <p>© 2026 Cashback per Tutti. Tutti i diritti riservati.</p>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Calcolatore piano compensi interattivo -->
+  <script>
+  (function() {
+    'use strict';
+    var LEVELS = [
+      { name: 'DIRETTI',   rate: 50   },
+      { name: 'LIVELLO 2', rate: 15   },
+      { name: 'LIVELLO 3', rate: 5    },
+      { name: 'LIVELLO 4', rate: 3    },
+      { name: 'LIVELLO 5', rate: 2.5  },
+      { name: 'LIVELLO 6', rate: 2.5  },
+    ];
+    var CAP = 50000;
+    var barEls = [], peopleEls = [], amountEls = [];
+    var anim = {};
+
+    // Build rows
+    var section = document.getElementById('icLevels');
+    LEVELS.forEach(function(lvl, i) {
+      var row = document.createElement('div');
+      row.className = 'ic-row';
+      row.innerHTML =
+        '<span class="ic-row-name">' + lvl.name + '</span>' +
+        '<div class="ic-bar-track"><div class="ic-bar-fill" id="icBar' + i + '"></div></div>' +
+        '<span class="ic-people" id="icPpl' + i + '"></span>' +
+        '<span class="ic-amount" id="icAmt' + i + '"></span>';
+      section.appendChild(row);
+      barEls.push(document.getElementById('icBar' + i));
+      peopleEls.push(document.getElementById('icPpl' + i));
+      amountEls.push(document.getElementById('icAmt' + i));
+    });
+
+    // Animated counter
+    function animTo(key, el, target, fmt) {
+      if (!anim[key]) anim[key] = { val: target, raf: null };
+      var a = anim[key];
+      if (a.raf) { cancelAnimationFrame(a.raf); a.raf = null; }
+      var from = a.val, t0 = performance.now(), dur = 380;
+      (function step(now) {
+        var p = Math.min((now - t0) / dur, 1);
+        var e = 1 - Math.pow(1 - p, 3);
+        a.val = from + (target - from) * e;
+        el.textContent = fmt(a.val);
+        if (p < 1) a.raf = requestAnimationFrame(step);
+        else { a.val = target; a.raf = null; }
+      })(t0);
+    }
+
+    function fmtInt(n) { return Math.round(n).toLocaleString('it-IT'); }
+    function fmtEur(n) {
+      return '\u20AC' + Math.round(n).toLocaleString('it-IT');
+    }
+
+    function calcPeople(s1, s2) {
+      return LEVELS.map(function(_, i) { return s1 * Math.pow(s2, i); });
+    }
+
+    function barW(count, max) {
+      if (count <= 0 || max <= 0) return 0;
+      return (Math.log(count + 1) / Math.log(max + 1)) * 100;
+    }
+
+    function setFill(slider, min, max) {
+      var pct = ((+slider.value - min) / (max - min)) * 100;
+      slider.style.setProperty('--fill', pct.toFixed(1) + '%');
+    }
+
+    function update() {
+      var s1 = +icSlider1.value, s2 = +icSlider2.value;
+      document.getElementById('icVal1').textContent = s1;
+      document.getElementById('icVal2').textContent = s2;
+      setFill(icSlider1, 3, 15);
+      setFill(icSlider2, 2, 5);
+
+      var people = calcPeople(s1, s2);
+      var maxP = people[5];
+      var runningTotal = 0, totalPpl = 0;
+
+      LEVELS.forEach(function(lvl, i) {
+        var cnt = people[i];
+        runningTotal += cnt * lvl.rate;
+        totalPpl += cnt;
+        barEls[i].style.width = barW(cnt, maxP) + '%';
+        if (cnt > CAP) {
+          if (anim['p'+i] && anim['p'+i].raf) { cancelAnimationFrame(anim['p'+i].raf); anim['p'+i].raf = null; }
+          peopleEls[i].textContent = '50.000+ persone';
+        } else {
+          animTo('p'+i, peopleEls[i], cnt, function(v) { return fmtInt(v) + ' persone'; });
+        }
+        animTo('a'+i, amountEls[i], runningTotal, fmtEur);
+      });
+
+      animTo('una',  document.getElementById('icTotalUna'), runningTotal,   fmtEur);
+      animTo('rec1', document.getElementById('icA1'),       totalPpl * 1,   fmtEur);
+      animTo('rec2', document.getElementById('icA2'),       totalPpl * 1.5, fmtEur);
+    }
+
+    var icSlider1 = document.getElementById('icSlider1');
+    var icSlider2 = document.getElementById('icSlider2');
+    icSlider1.addEventListener('input', update);
+    icSlider2.addEventListener('input', update);
+    update();
+  })();
+  </script>
 </body>
 </html>
