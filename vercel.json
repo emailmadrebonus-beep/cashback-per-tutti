@@ -1,7 +1,9 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/", "destination": "/guadagni", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/", "destination": "/guadagni.html" },
     { "source": "/guadagni", "destination": "/guadagni.html" },
     { "source": "/thankyoupage1", "destination": "/thankyoupage1.html" }
   ]
