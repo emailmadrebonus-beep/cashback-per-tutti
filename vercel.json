@@ -5,6 +5,7 @@
   ],
   "rewrites": [
     { "source": "/guadagni", "destination": "/guadagni.html" },
+    { "source": "/network", "destination": "/network.html" },
     { "source": "/thankyoupage1", "destination": "/thankyoupage1.html" },
     { "source": "/thankyou", "destination": "/thankyou.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
