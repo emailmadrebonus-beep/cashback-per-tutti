@@ -1,0 +1,165 @@
+=========================================================
+  COPY ANALYSIS — networkenergetico.com/network
+  File sorgente: network.html
+  Data: 24/03/2026
+=========================================================
+  SEO (invisibile all'utente, ma importante)
+=========================================================
+
+TITLE TAG:
+  Network Marketing Energia — Costruisci la tua rete e guadagna | Network Energetico
+
+META DESCRIPTION:
+  Entra nel settore energetico con un piano compensi su 6 livelli,
+  formazione gratuita e struttura operativa da oltre 10 anni.
+  Hai contatti nel settore dell'energia? Usali.
+
+
+=========================================================
+  SEZIONE 1 — NAVBAR
+=========================================================
+
+Logo: Network Energetico
+Link CTA (in alto a destra): "Scrivici su WhatsApp"
+
+
+=========================================================
+  SEZIONE 2 — HERO (prima cosa che l'utente vede)
+=========================================================
+
+BADGE (piccola etichetta sopra H1):
+  "Network Marketing Energia"
+
+H1 (titolo principale):
+  "Hai contatti nel settore dell'energia?
+   Trasformali in rendita mensile."
+
+SOTTOTITOLO:
+  "Piano compensi su 6 livelli, ricorrenza garantita su ogni contratto
+   attivo, formazione gratuita da subito. Il settore cresce — entra ora."
+
+BOTTONE CTA PRINCIPALE:
+  → [Scrivici su WhatsApp]
+     "Voglio ricevere il video spiegazione"
+
+---
+
+CALCOLATORE MLM INTERATTIVO (nella metà destra della Hero):
+
+  Slider 1: "Persone che porti tu"  (default: 10, range 3-15)
+  Slider 2: "Portate da ognuno"     (default: 5,  range 2-5)
+
+  Riga livelli (valori calcolati dinamicamente):
+    DIRETTI    | LIVELLO 2 | LIVELLO 3 | LIVELLO 4 | LIVELLO 5 | LIVELLO 6
+
+  Totali mostrati:
+    → Potenziale Totale Una Tantum       (default: €100.000)
+    → Potenziale Totale Mensile          (default: €39.060)
+    → Ricorrenza / mese (Anno 1 · €1 / persona)
+    → Ricorrenza / mese (Anno 2 · €1,50 / persona)
+
+
+=========================================================
+  SEZIONE 3 — PROBLEMA / SOLUZIONE
+=========================================================
+
+BADGE: "Il problema che conosci"
+
+H2 PROBLEMA:
+  "Ti sei già bruciato una volta?"
+
+SOTTOTITOLO PROBLEMA:
+  "Hai costruito una rete, investito tempo e contatti,
+   e poi hai perso tutto perché l'azienda non era strutturata."
+
+LISTA PROBLEMI (bullet):
+  ✗ Piano compensi cambiato senza preavviso
+  ✗ Gestionale lento, contratti persi per errori tecnici
+  ✗ Nessuna formazione seria, solo promesse
+  ✗ Azienda sparita nel nulla dopo 18 mesi
+
+H3 SOLUZIONE:
+  "Con noi è diverso.
+   Ecco perché."
+
+LISTA SOLUZIONI (bullet):
+  ✓ Gestionale proprietario — i tuoi contratti sono sempre tracciabili in tempo reale
+  ✓ Formazione gratuita su network marketing e acquisizione clienti
+  ✓ Piano compensi fisso e trasparente — scritto, non a voce
+  ✓ Ricorrenza mensile su ogni contratto attivo
+  ✓ Struttura che porta già centinaia di contratti ogni mese
+
+BOTTONE CTA:
+  → [Voglio saperne di più]
+
+
+=========================================================
+  SEZIONE 4 — SOCIAL PROOF + PERCHÉ LAVORARE
+=========================================================
+
+BADGE: "La community cresce"
+
+NUMERO GRANDE: "100.000+"
+  "persone già fanno parte della rete con noi"
+
+TESTO:
+  "Il mercato energetico italiano cresce di mese in mese.
+   Chi entra oggi costruisce una rendita.
+   Chi aspetta, lascia spazio agli altri."
+
+---
+
+H2: "Perché lavorare con noi"
+
+CARD 1 — Alte provvigioni
+  "Guadagna commissioni competitive su ogni contratto,
+   con un piano compensi trasparente e in continua crescita."
+
+CARD 2 — Formazione esclusiva
+  "Accedi a corsi, materiali e supporto dedicato per crescere
+   professionalmente e massimizzare i tuoi risultati."
+
+CARD 3 — Bonus per te e il cliente
+  "Premi e incentivi sia per te che per i clienti che porti,
+   creando un vantaggio reciproco che fidelizza la rete."
+
+
+=========================================================
+  SEZIONE 5 — UN SOLO PASSO (CTA finale)
+=========================================================
+
+BADGE: "— UN SOLO PASSO —"
+
+H2:
+  "Hai contatti nel settore dell'energia?
+   USALI."
+
+VIDEO BOX (elemento bloccato/teaser):
+  "Ricevi il video gratuito su WhatsApp"
+
+BOTTONE CTA FINALE:
+  → [Scrivici su WhatsApp]
+     "Voglio ricevere il video spiegazione"
+
+
+=========================================================
+  SEZIONE 6 — FOOTER
+=========================================================
+
+Logo: Network Energetico
+Copyright: © 2026 Network Energetico. Tutti i diritti riservati.
+Link: Privacy Policy · Termini e Condizioni
+
+
+=========================================================
+  NOTE TECNICHE (per il dev, non per il copywriter)
+=========================================================
+
+- URL pagina:     https://www.networkenergetico.com/network
+- File sorgente:  network.html (duplicato di guadagni.html al 24/03/2026)
+- Redirect WA → thankyou.html → wa.me/393514285884
+- Meta Pixel:     1427461369047716
+- TikTok Pixel:   D54QCU3C77U3FL78T0R0
+- OG image/URL:   ancora punta a cashbackpertutti.com (da aggiornare)
+
+=========================================================
