@@ -8,6 +8,7 @@
     { "source": "/network", "destination": "/network.html" },
     { "source": "/thankyoupage1", "destination": "/thankyoupage1.html" },
     { "source": "/thankyou", "destination": "/thankyou.html" },
+    { "source": "/thankyounetwork", "destination": "/thankyounetwork.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/termini", "destination": "/termini.html" }
   ]
