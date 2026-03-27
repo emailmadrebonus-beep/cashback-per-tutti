@@ -170,7 +170,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
-      align-items: start;
+      align-items: stretch;
     }
     .problema-badge {
       display: flex;
@@ -244,9 +244,14 @@
       border-radius: 20px;
       padding: 1.6rem 1.5rem;
     }
+    .problema-left {
+      border-left: 3px solid #ef4444;
+      padding-left: 1.2rem;
+    }
     .soluzione-card {
       background: rgba(255,255,255,0.9);
-      border: 1px solid rgba(0,0,0,0.08);
+      border: 1px solid rgba(37,211,102,0.25);
+      border-left: 3px solid #25D366;
       border-radius: 16px;
       padding: 1.6rem 1.5rem;
     }
@@ -410,7 +415,7 @@
     .social-proof-section {
       background: #0a0a0a;
       padding: 3rem 0;
-      text-align: center;
+      text-align: left;
       position: relative;
       z-index: 2;
       border-radius: 32px 32px 0 0;
@@ -521,6 +526,7 @@
     }
     @media (max-width: 768px) {
       .sp-cards { grid-template-columns: 1fr; }
+      .social-proof-section .container > div { grid-template-columns: 1fr !important; }
     }
 
 
@@ -808,7 +814,7 @@
       <div class="problema-grid">
 
         <!-- Sinistra: il problema -->
-        <div class="problema-left">
+        <div class="problema-left" style="border:none;border-left:4px solid #ef4444;background:linear-gradient(to right,rgba(239,68,68,0.05),transparent);border-radius:16px 0 0 16px;display:flex;flex-direction:column;justify-content:center;">
           <p class="problema-badge">
             <span class="problema-badge-line"></span>
             Ti capiamo, ci siamo passati anche noi
@@ -825,7 +831,7 @@
         </div>
 
         <!-- Destra: la soluzione -->
-        <div class="soluzione-card">
+        <div class="soluzione-card" style="border:1px solid rgba(37,211,102,0.3);border-right:4px solid #25D366;border-left:1px solid rgba(37,211,102,0.3);background:rgba(37,211,102,0.03);">
           <h3 class="soluzione-title">Questa non è l'ennesima opportunità.<br><span class="highlight">È un progetto reale, su un settore reale.</span></h3>
           <p style="font-size:0.93rem;color:#94a3b8;line-height:1.7;margin-bottom:1.5rem;">Se vuoi sentirti parte di un gruppo, se cerchi qualcuno che ti porga la mano quando cadi, scrivici e entra a far parte della nostra community, un progetto che nasce con l'obiettivo di mettere la TUA persona davanti a tutto, senza essere una persona fra i tanti.</p>
           <ul class="soluzione-list">
@@ -992,46 +998,47 @@
   <!-- ===== SOCIAL PROOF ===== -->
   <section class="social-proof-section">
     <div class="container">
-      <p class="sp-badge"><span class="sp-badge-line"></span>Non sei solo</p>
-      <div class="sp-number">1.000+</div>
-      <h2 class="sp-title">persone fanno già parte di questa rete</h2>
-      <p class="sp-subtitle">Non stai entrando in qualcosa di nuovo. Stai entrando in qualcosa che funziona già, e che ha ancora spazio per te. Chi è entrato da prima di te oggi ringrazia il giorno che ha preso la decisione di scoprire la nostra community.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
 
-      <img src="leadership png.png" alt="Leadership Network Energetico" style="display:block;max-width:520px;width:100%;margin:2rem auto 0;border-radius:16px;">
+        <!-- Sinistra: 1000+ -->
+        <div>
+          <p class="sp-badge"><span class="sp-badge-line"></span>Non sei solo</p>
+          <div class="sp-number">1.000+</div>
+          <h2 class="sp-title">persone fanno già parte di questa rete</h2>
+          <p class="sp-subtitle" style="text-align:left;">Non stai entrando in qualcosa di nuovo. Stai entrando in qualcosa che funziona già, e che ha ancora spazio per te. Chi è entrato da prima di te oggi ringrazia il giorno che ha preso la decisione di scoprire la nostra community.</p>
+          <img src="leadership png.png" alt="Leadership Network Energetico" style="display:block;max-width:360px;width:100%;margin:2rem 0 0;border-radius:16px;">
+        </div>
 
-    </div>
+        <!-- Destra: A chi è per te -->
+        <div>
+          <p class="problema-badge" style="margin-bottom:1rem;">
+            <span class="problema-badge-line"></span>
+            Fai parte di noi se…
+          </p>
+          <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:0.5rem;">Non cerchiamo tutti.</h2>
+          <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#25D366;line-height:1.2;margin-bottom:2rem;">Cerchiamo le persone giuste.</h2>
+          <div style="display:flex;flex-direction:column;gap:0.85rem;">
+            <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.3);border-radius:12px;padding:1.1rem 1.4rem;">
+              <span style="color:#25D366;font-size:1.2rem;line-height:1.5;flex-shrink:0;">→</span>
+              <p style="color:#e0e0e0;font-size:0.95rem;line-height:1.6;margin:0;">Ti sei già bruciato e vuoi capire come farlo in modo diverso</p>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.3);border-radius:12px;padding:1.1rem 1.4rem;">
+              <span style="color:#25D366;font-size:1.2rem;line-height:1.5;flex-shrink:0;">→</span>
+              <p style="color:#e0e0e0;font-size:0.95rem;line-height:1.6;margin:0;">Vuoi imparare e metterti in gioco, ti piace aiutare gli altri</p>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.3);border-radius:12px;padding:1.1rem 1.4rem;">
+              <span style="color:#25D366;font-size:1.2rem;line-height:1.5;flex-shrink:0;">→</span>
+              <p style="color:#e0e0e0;font-size:0.95rem;line-height:1.6;margin:0;">Vuoi sentirti parte di un gruppo, non lavorare da solo</p>
+            </div>
+          </div>
+        </div>
 
+      </div>
     </div>
   </section><!-- end social-proof-section -->
 
-  <!-- ===== A CHI È PER TE ===== -->
-  <section style="background:#f5f5f5; padding: 5rem 0;">
-    <div class="container">
-      <p class="problema-badge" style="justify-content:center;margin-bottom:1.2rem;">
-        <span class="problema-badge-line"></span>
-        Fai parte di noi se…
-      </p>
-      <h2 style="text-align:center;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#0a0a0a;line-height:1.2;margin-bottom:0.5rem;">Non cerchiamo tutti.</h2>
-      <h2 style="text-align:center;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#25D366;line-height:1.2;margin-bottom:3rem;">Cerchiamo le persone giuste.</h2>
-      <div style="max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:0.85rem;">
-        <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(37,211,102,0.07);border:1px solid rgba(37,211,102,0.25);border-radius:12px;padding:1.1rem 1.4rem;">
-          <span style="color:#25D366;font-size:1.2rem;line-height:1.5;flex-shrink:0;">→</span>
-          <p style="color:#1a1a1a;font-size:0.95rem;line-height:1.6;margin:0;">Ti sei già bruciato e vuoi capire come farlo in modo diverso</p>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(37,211,102,0.07);border:1px solid rgba(37,211,102,0.25);border-radius:12px;padding:1.1rem 1.4rem;">
-          <span style="color:#25D366;font-size:1.2rem;line-height:1.5;flex-shrink:0;">→</span>
-          <p style="color:#1a1a1a;font-size:0.95rem;line-height:1.6;margin:0;">Vuoi imparare e metterti in gioco, ti piace aiutare gli altri</p>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;background:rgba(37,211,102,0.07);border:1px solid rgba(37,211,102,0.25);border-radius:12px;padding:1.1rem 1.4rem;">
-          <span style="color:#25D366;font-size:1.2rem;line-height:1.5;flex-shrink:0;">→</span>
-          <p style="color:#1a1a1a;font-size:0.95rem;line-height:1.6;margin:0;">Vuoi sentirti parte di un gruppo, non lavorare da solo</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== UN SOLO PASSO ===== -->
-  <section class="passo-section" style="background:#f5f5f5; padding: 100px 24px; text-align: center; position: relative; overflow: hidden;">
+  <section class="passo-section" style="background:#f5f5f5; padding: 60px 24px; text-align: center; position: relative; overflow: hidden;">
     <div class="hero-bg" aria-hidden="true">
       <div class="mesh-gradient"></div>
       <div class="grid-bg"></div>
