@@ -1,15 +1,15 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "/rete", "permanent": false },
-    { "source": "/guadagni", "destination": "/rete", "permanent": false }
+    { "source": "/", "destination": "/rete", "permanent": false }
   ],
   "rewrites": [
     { "source": "/rete", "destination": "/rete.html" },
     { "source": "/network", "destination": "/network.html" },
-    { "source": "/thankyoupage1", "destination": "/thankyoupage1.html" },
+    { "source": "/cashback", "destination": "/cashback.html" },
     { "source": "/thankyou", "destination": "/thankyou.html" },
     { "source": "/thankyounetwork", "destination": "/thankyounetwork.html" },
+    { "source": "/thankyoucashback", "destination": "/thankyoucashback.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/termini", "destination": "/termini.html" }
   ]
