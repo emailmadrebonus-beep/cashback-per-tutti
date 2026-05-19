@@ -12,5 +12,13 @@
     { "source": "/thankyoucashback", "destination": "/thankyoucashback.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/termini", "destination": "/termini.html" }
+  ],
+  "headers": [
+    {
+      "source": "/metodoalcontrario/:path*",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
   ]
 }
