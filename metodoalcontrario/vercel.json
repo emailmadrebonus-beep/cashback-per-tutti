@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/", "destination": "/sardegna", "permanent": false }
+  ],
   "rewrites": [
+    { "source": "/sardegna", "destination": "/sardegna.html" },
     { "source": "/thankyou", "destination": "/thankyou.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/termini", "destination": "/termini.html" }
