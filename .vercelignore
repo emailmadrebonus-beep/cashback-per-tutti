@@ -1,0 +1,6 @@
+# Cartelle/file non necessari al deploy (progetto Cashback + Network)
+_archive/
+CLAUDE.md
+SKILL.md
+ORGANIZZAZIONE.md
+*.code-workspace
