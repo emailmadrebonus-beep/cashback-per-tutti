@@ -5,7 +5,9 @@
   ],
   "rewrites": [
     { "source": "/sardegna", "destination": "/sardegna.html" },
+    { "source": "/collaboratori", "destination": "/collaboratori.html" },
     { "source": "/thankyou", "destination": "/thankyou.html" },
+    { "source": "/thankyoucollaboratori", "destination": "/thankyoucollaboratori.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/termini", "destination": "/termini.html" }
   ]

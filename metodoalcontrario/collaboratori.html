@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ SEO / META ============ -->
+  <title>Vuoi costruire qualcosa di tuo? | Progetto per collaboratori</title>
+  <meta name="description" content="Un progetto serio in un settore di prima necessità presente in ogni casa italiana. Squadra, formazione e un sistema già pronto. Guarda il video di presentazione di 30 minuti e capisci se fa per te.">
+  <link rel="canonical" href="https://www.metodoalcontrario.com/collaboratori">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.metodoalcontrario.com/collaboratori">
+  <meta property="og:title" content="Vuoi costruire qualcosa di tuo? | Progetto per collaboratori">
+  <meta property="og:description" content="Un progetto serio in un settore di prima necessità. Squadra, formazione e un sistema già pronto. 30 minuti per capire se fa per te.">
+  <!-- og:image — placeholder: sostituire con un'immagine social dedicata 1200x630 quando disponibile -->
+  <meta property="og:image" content="https://www.metodoalcontrario.com/logo%20metodoalcontrario%20rinnovato.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vuoi costruire qualcosa di tuo? | Progetto per collaboratori">
+  <meta name="twitter:description" content="Un progetto serio, una squadra vera e un sistema già pronto. 30 minuti per capire se fa per te.">
+
+  <!-- ============ Meta Pixel Code ============ -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '959514466876508');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=959514466876508&ev=PageView&noscript=1" alt=""></noscript>
+  <!-- ============ End Meta Pixel Code ============ -->
+
+  <link rel="icon" type="image/png" href="logo%20metodoalcontrario%20rinnovato.png">
+  <link rel="apple-touch-icon" href="logo%20metodoalcontrario%20rinnovato.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       1. RESET & BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --bg: #07090b;
+      --bg-page: #eceef1;
+      --ink: #14181f;
+      --ink-invert: #ffffff;
+      --muted: #5b6470;
+      --muted-invert: rgba(255,255,255,0.72);
+      --line: rgba(20,24,31,0.10);
+      --line-invert: rgba(255,255,255,0.12);
+      --accent: #34d676;
+      --accent-strong: #25D366;
+      --accent-deep: #137a43;
+      --accent-soft: rgba(37,211,102,0.10);
+      --cta: #1faf5a;
+      --cta-press: #178f49;
+      --negative: #e2574c;
+      --negative-soft: rgba(226,87,76,0.10);
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--bg-page);
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    /* sfondo statico, nessuna animazione ambientale (tono sobrio) */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(38vmax 38vmax at 14% 14%, rgba(37,211,102,0.07), transparent 60%),
+        radial-gradient(34vmax 34vmax at 88% 70%, rgba(19,122,67,0.05), transparent 60%);
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--accent); color: #fff; }
+
+    /* ============================================================
+       2. UTILITIES
+       ============================================================ */
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
+    .container-narrow { max-width: 820px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
+    .center { text-align: center; }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.3rem;
+    }
+
+    /* ============================================================
+       3. TYPOGRAPHY
+       ============================================================ */
+    .h2 {
+      font-size: clamp(1.65rem, 3.4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+    .h3 {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .lead {
+      font-size: clamp(1.02rem, 1.4vw, 1.15rem);
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 60ch;
+    }
+    .section-head { max-width: 720px; margin-bottom: 2.8rem; }
+    .section-head.center { margin-left: auto; margin-right: auto; }
+
+    /* ============================================================
+       4. BUTTONS
+       ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.15;
+      padding: 16px 30px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-cta { background: var(--cta); color: #fff; box-shadow: 0 12px 26px -12px rgba(31,175,90,0.6); }
+    .btn-cta:hover { background: var(--cta-press); transform: translateY(-2px); box-shadow: 0 18px 34px -14px rgba(31,175,90,0.65); }
+    .btn-cta:active { transform: translateY(0); }
+    .btn-large { padding: 19px 38px; font-size: 1.08rem; }
+    .btn-cta svg { flex-shrink: 0; }
+    a.btn:focus-visible { outline: 3px solid rgba(31,175,90,0.45); outline-offset: 2px; }
+    .cta-note { margin-top: 0.9rem; font-size: 0.85rem; color: var(--muted); }
+    .dark .cta-note { color: rgba(255,255,255,0.55); }
+
+    /* ============================================================
+       5. SECTION BASE
+       ============================================================ */
+    section { padding: 4.8rem 0; background: #ffffff; color: var(--ink); position: relative; }
+    section + section { border-top: 1px solid var(--line); }
+    section.gray { background: #f5f6f8; }
+    section.dark {
+      background: var(--bg);
+      color: var(--ink-invert);
+      overflow: hidden;
+      border-top: none;
+    }
+    section.dark::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(60vmax 50vmax at 110% 50%, rgba(37,211,102,0.16), transparent 55%),
+        radial-gradient(50vmax 40vmax at -10% 25%, rgba(37,211,102,0.09), transparent 60%);
+      z-index: 0;
+    }
+    section.dark .h2 { color: var(--ink-invert); }
+    section.dark .lead { color: var(--muted-invert); }
+    section.dark .kicker { color: #8be9ac; background: rgba(37,211,102,0.16); }
+    @media (max-width: 768px) { section { padding: 3.4rem 0; } }
+
+    /* ============================================================
+       6. HERO  (card scura arrotondata su sfondo chiaro — firma del sito)
+       ============================================================ */
+    .hero {
+      border-radius: 32px;
+      margin: 18px;
+      padding: 5rem 0 4.4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(125% 95% at 50% 0%, #1b1f1b 0%, #0c0e0c 55%, #07090b 100%);
+      box-shadow: 0 30px 80px -40px rgba(0,0,0,0.45);
+      border-top: none;
+    }
+    .hero::before { /* glow verde statico, niente pulsazione */
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -14%;
+      width: 92vw;
+      height: 70vh;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(31,175,90,0.26), transparent 62%);
+      filter: blur(24px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-inner { max-width: 840px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .hero .kicker { color: #8be9ac; background: rgba(31,175,90,0.18); }
+    .hero-title {
+      font-size: clamp(2.1rem, 5.2vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.3rem;
+      text-wrap: balance;
+    }
+    .hero-title .line1 { display: block; color: #ffffff; }
+    .hero-title .line2 { display: block; color: var(--accent); }
+    .hero-sub {
+      font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+      color: rgba(255,255,255,0.74);
+      line-height: 1.65;
+      max-width: 620px;
+      margin: 0 auto 2rem;
+    }
+    .hero-sub strong { color: #ffffff; font-weight: 700; }
+    .hero-bullets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 2.3rem;
+    }
+    .hero-bullet {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+    }
+    .hero-bullet::before {
+      content: '';
+      width: 16px; height: 16px; flex-shrink: 0;
+      background-color: var(--accent);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @media (max-width: 600px) {
+      .hero { margin: 10px; border-radius: 22px; }
+      .btn { white-space: normal; }
+    }
+
+    /* ============================================================
+       7. PROFILI  (Per chi è questo progetto)
+       ============================================================ */
+    .profili-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .profilo-card {
+      padding: 1.7rem 1.7rem 1.8rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px -30px rgba(0,0,0,0.30);
+    }
+    .profilo-tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      padding: 0.32rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .profilo-card h3 { margin-bottom: 0.6rem; }
+    .profilo-card p { color: var(--muted); font-size: 0.98rem; line-height: 1.6; }
+    @media (max-width: 720px) { .profili-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       8. "COSA NON FACCIAMO"  (pain points, X rosse)
+       ============================================================ */
+    .no-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.1rem;
+      max-width: 920px;
+    }
+    .no-list li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 0.9rem;
+      align-items: start;
+      padding: 1.2rem 1.3rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      font-size: 1rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .gray .no-list li { background: #ffffff; }
+    .no-list li::before {
+      content: '';
+      width: 26px; height: 26px; flex-shrink: 0;
+      background-color: var(--negative);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'/><line x1='6' y1='6' x2='18' y2='18'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 2px;
+    }
+    .no-list li strong { font-weight: 700; }
+    @media (max-width: 720px) { .no-list { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       9. "COSA FACCIAMO DI DIVERSO"  (sezione scura, modello vago)
+       ============================================================ */
+    .diverso-body { max-width: 760px; }
+    .diverso-body .lead { margin-bottom: 1.3rem; }
+    .diverso-body .lead:last-of-type { margin-bottom: 2rem; }
+    .diverso-curiosity {
+      display: inline-block;
+      margin: 0.4rem 0 2rem;
+      padding: 1.1rem 1.4rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(37,211,102,0.06);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted-invert);
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+    .diverso-curiosity strong { color: #ffffff; }
+
+    /* ============================================================
+       10. "COSA OFFRIAMO"  (3 card numerate)
+       ============================================================ */
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+    .offer-card {
+      padding: 1.9rem 1.6rem 1.8rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px -30px rgba(0,0,0,0.30);
+      display: flex;
+      flex-direction: column;
+    }
+    .offer-num {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      opacity: 0.9;
+      margin-bottom: 1rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .offer-card h3 { margin-bottom: 0.7rem; }
+    .offer-card p { color: var(--muted); font-size: 0.98rem; line-height: 1.6; }
+    @media (max-width: 820px) { .offer-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       11. "COSA CHIEDIAMO A TE"  (3 punti + chiusura)
+       ============================================================ */
+    .chiediamo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-bottom: 2.6rem;
+    }
+    .chiediamo-card {
+      padding: 1.7rem 1.6rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      text-align: left;
+    }
+    .chiediamo-icon {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .chiediamo-icon svg { width: 20px; height: 20px; stroke: var(--accent-deep); }
+    .chiediamo-card h3 { margin-bottom: 0.5rem; }
+    .chiediamo-card p { color: var(--muted); font-size: 0.96rem; line-height: 1.55; }
+    .chiediamo-close {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    .chiediamo-close .green { color: var(--accent-deep); }
+    @media (max-width: 820px) { .chiediamo-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       12. FILTRO 30 MINUTI  (sezione scura, numero grande)
+       ============================================================ */
+    .filtro-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2.6rem;
+      align-items: center;
+    }
+    .filtro-num {
+      font-size: clamp(5rem, 14vw, 9rem);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+    }
+    .filtro-num span { display: block; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; color: var(--accent); margin-top: 0.4rem; }
+    .filtro-body .lead { margin-bottom: 1.2rem; }
+    .filtro-body .lead:last-of-type { margin-bottom: 1.9rem; }
+    .filtro-body strong { color: #ffffff; }
+    @media (max-width: 760px) {
+      .filtro-grid { grid-template-columns: 1fr; gap: 1rem; text-align: left; }
+      .filtro-num { font-size: clamp(4rem, 26vw, 6rem); }
+    }
+
+    /* ============================================================
+       13. FAQ  (accordion)
+       ============================================================ */
+    .faq-list { max-width: 820px; margin: 0 auto; }
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+      margin-bottom: 0.8rem;
+      overflow: hidden;
+    }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.25rem 1.4rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '';
+      width: 22px; height: 22px; flex-shrink: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23137a43' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.2s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(180deg); }
+    .faq-item .faq-answer { padding: 0 1.4rem 1.3rem; color: var(--muted); line-height: 1.65; }
+    .faq-item .faq-answer strong { color: var(--ink); }
+
+    /* ============================================================
+       14. FINAL CTA
+       ============================================================ */
+    .final-cta {
+      background: #050709;
+      color: #eef1f4;
+      text-align: center;
+      padding: 5rem 1.5rem;
+      border-top: none;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -30%;
+      width: 90vw; height: 70vh;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(37,211,102,0.20), transparent 65%);
+      filter: blur(30px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .final-cta-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+    .final-cta .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.74rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: #7ee3a6; margin-bottom: 1.2rem;
+    }
+    .final-cta h2 {
+      font-size: clamp(1.7rem, 4vw, 2.55rem);
+      font-weight: 800; line-height: 1.15; letter-spacing: -0.02em;
+      color: #ffffff; margin-bottom: 1.1rem;
+    }
+    .final-cta h2 .green { color: #4ade80; }
+    .final-cta p {
+      font-size: 1.06rem; color: rgba(238,241,244,0.78); line-height: 1.65;
+      margin: 0 auto 2rem; max-width: 56ch;
+    }
+    .final-cta .final-cta-microcopy {
+      margin: 1.8rem auto 0; font-size: 0.86rem; color: rgba(238,241,244,0.5); line-height: 1.55;
+    }
+
+    /* ============================================================
+       15. FOOTER
+       ============================================================ */
+    footer.foot { background: #050709; color: rgba(238,241,244,0.55); padding: 2.6rem 1.5rem 3rem; text-align: center; }
+    footer.foot .foot-logo {
+      width: 64px; height: 64px; border-radius: 50%; object-fit: cover;
+      margin: 0 auto 1rem; display: block; box-shadow: 0 12px 28px -14px rgba(0,0,0,0.6);
+    }
+    footer.foot .foot-brand {
+      font-weight: 800; font-size: 1.1rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: #eef1f4; margin-bottom: 0.6rem;
+    }
+    footer.foot a { color: rgba(238,241,244,0.55); transition: color 0.2s; }
+    footer.foot a:hover { color: #eef1f4; }
+    footer.foot .foot-links { margin-top: 0.5rem; font-size: 0.9rem; }
+    footer.foot .foot-divider { color: rgba(238,241,244,0.3); margin: 0 8px; }
+
+    /* ============================================================
+       16. MOTION  (reveal discreto, rispetta prefers-reduced-motion)
+       ============================================================ */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22,0.68,0.32,1); }
+    .reveal.is-in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       SEZIONE 1 — HERO
+       ============================================================ -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="kicker">Per chi vuole costruire qualcosa di proprio</span>
+        <h1 class="hero-title">
+          <span class="line1">Vuoi costruire qualcosa di tuo..</span>
+          <span class="line2">ti manca solo la strada giusta.</span>
+        </h1>
+        <p class="hero-sub">
+          C'è un settore di <strong>prima necessità</strong>, presente in ogni casa italiana, che sta cambiando in fretta. Noi lavoriamo lì dentro. Prima di raccontarti come, ti chiediamo solo <strong>30 minuti</strong>: guarda il video di presentazione e capisci da solo se questo progetto fa per te.
+        </p>
+        <div class="hero-bullets">
+          <span class="hero-bullet">Un settore presente in ogni casa</span>
+          <span class="hero-bullet">Una squadra vera al tuo fianco</span>
+          <span class="hero-bullet">30 minuti per capire</span>
+        </div>
+
+        <!-- CTA PRIMARIO #1 (hero) — porta alla pagina ponte (redirect WhatsApp). Testo modificabile. -->
+        <a href="thankyoucollaboratori.html" class="btn btn-cta btn-large" data-cta="primario">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Guarda il video di presentazione
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SEZIONE 2 — PER CHI È QUESTO PROGETTO (identificazione)
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Per chi è questo progetto</span>
+        <h2 class="h2">Se ti riconosci qui, continua a leggere</h2>
+        <p class="lead" style="margin:0.8rem auto 0;">Non è un progetto per tutti, ed è giusto così. È pensato per persone come queste.</p>
+      </div>
+      <div class="profili-grid">
+        <article class="profilo-card">
+          <span class="profilo-tag">Il dipendente</span>
+          <h3 class="h3">Cerchi una seconda strada</h3>
+          <p>Hai un lavoro, ma senti che da solo non ti porterà dove vuoi arrivare. Cerchi qualcosa di tuo da costruire accanto, con i tuoi tempi e senza buttare via quello che hai già.</p>
+        </article>
+        <article class="profilo-card">
+          <span class="profilo-tag">L'ex networker</span>
+          <h3 class="h3">Ci hai già provato e sei rimasto deluso</h3>
+          <p>Hai vissuto promesse gonfiate e scatoloni di prodotti rimasti in casa. Sei uscito con la sensazione di aver fatto correre solo qualcun altro. Stavolta vuoi qualcosa di serio.</p>
+        </article>
+        <article class="profilo-card">
+          <span class="profilo-tag">Chi ha già tentato</span>
+          <h3 class="h3">Hai provato corsi e progetti che non sono decollati</h3>
+          <p>Hai seguito formazione online, aperto piccole attività, fatto tentativi. Belle intenzioni, pochi risultati concreti. Adesso vuoi un sistema che funzioni davvero, non un'altra teoria.</p>
+        </article>
+        <article class="profilo-card">
+          <span class="profilo-tag">Il curioso</span>
+          <h3 class="h3">Vuoi capire come sta cambiando il 2026</h3>
+          <p>Vedi che il mondo si muove e vuoi capirci qualcosa prima degli altri. Sei qui per informarti con la tua testa, non per farti convincere da nessuno. Va benissimo: parti proprio da lì.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 3 — COSA NON FACCIAMO (pain points per contrasto)
+       ============================================================ -->
+  <section class="gray">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Mettiamo le cose in chiaro</span>
+        <h2 class="h2">Cosa <em>non</em> facciamo</h2>
+        <p class="lead" style="margin-top:0.8rem;">Sappiamo cosa ti ha fatto storcere il naso in passato. Ti diciamo subito da cosa:</p>
+      </div>
+      <ul class="no-list">
+        <li><span>Niente <strong>pacchetti di prodotti da comprare</strong> per poter iniziare. Si parte mettendoci impegno, non altro.</span></li>
+        <li><span>Niente <strong>prodotti che nessuno vuole davvero</strong> e che ti restano in cantina a prendere polvere.</span></li>
+        <li><span>Niente <strong>liste di amici e parenti</strong> da chiamare uno a uno con l'imbarazzo addosso.</span></li>
+        <li><span>Niente sensazione di <strong>far arricchire qualcun altro</strong> mentre tu resti fermo al punto di partenza.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 4 — COSA FACCIAMO DI DIVERSO (modello vago, curiosity gap)
+       ============================================================ -->
+  <section class="dark">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Cosa facciamo di diverso</span>
+        <h2 class="h2">Un settore che non passa mai di moda</h2>
+      </div>
+      <div class="diverso-body">
+        <p class="lead">Lavoriamo in un <strong style="color:#fff;">settore di prima necessità</strong>: qualcosa che ogni famiglia italiana usa ogni giorno, in ogni casa, e che continuerà a usare anche tra dieci anni.</p>
+        <p class="lead">Attorno a questo abbiamo costruito un <strong style="color:#fff;">ecosistema di servizi</strong>. Il nostro lavoro è semplice da capire e difficile da copiare: aiutiamo le famiglie a trasformare delle spese che già fanno, da sempre, in un vantaggio concreto per loro.</p>
+        <div class="diverso-curiosity">
+          Come funziona <strong>nel dettaglio</strong> te lo mostriamo nel video. Non perché sia un segreto, ma perché in 30 minuti si capisce molto meglio di mille righe scritte qui.
+        </div>
+
+        <!-- CTA SECONDARIO #2 (mid-page) — porta alla pagina ponte (redirect WhatsApp). Testo modificabile. -->
+        <a href="thankyoucollaboratori.html" class="btn btn-cta" data-cta="secondario">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Mostrami come funziona
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 5 — COSA OFFRIAMO (3 punti chiave)
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Cosa offriamo</span>
+        <h2 class="h2">Non ti lasciamo mai da solo</h2>
+        <p class="lead" style="margin:0.8rem auto 0;">Tre cose che fanno la differenza tra un tentativo e un progetto serio.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <div class="offer-num">01</div>
+          <h3 class="h3">Una squadra vera</h3>
+          <p>Una figura di riferimento che ti segue passo passo, una community attiva che non ti molla, formazione strutturata e materiali già pronti all'uso. Non sei un numero: sei parte di un gruppo.</p>
+        </article>
+        <article class="offer-card">
+          <div class="offer-num">02</div>
+          <h3 class="h3">Un'azienda solida alle spalle</h3>
+          <p>Una realtà italiana, regolamentata, presente sul mercato da anni. Non un'idea nata ieri in un garage: una struttura che esiste, funziona e continua a crescere.</p>
+        </article>
+        <article class="offer-card">
+          <div class="offer-num">03</div>
+          <h3 class="h3">Un sistema già pronto</h3>
+          <p>Anni di prove, errori e correzioni già fatti al posto tuo. Tu non parti da zero: parti da un metodo collaudato, lo segui e lo applichi alla tua situazione.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 6 — COSA CHIEDIAMO A TE
+       ============================================================ -->
+  <section class="gray">
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Cosa chiediamo a te</span>
+        <h2 class="h2">Solo tre cose. E sono alla tua portata.</h2>
+      </div>
+      <div class="chiediamo-grid">
+        <article class="chiediamo-card">
+          <div class="chiediamo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12V4"/></svg>
+          </div>
+          <h3 class="h3">Voglia di imparare</h3>
+          <p>Curiosità e mente aperta valgono più dell'esperienza. Se sei disposto a imparare, il resto viene da sé.</p>
+        </article>
+        <article class="chiediamo-card">
+          <div class="chiediamo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
+          </div>
+          <h3 class="h3">Qualche ora a settimana</h3>
+          <p>Con costanza, nei ritagli che riesci a trovare. Lo costruisci attorno alla tua vita, non il contrario.</p>
+        </article>
+        <article class="chiediamo-card">
+          <div class="chiediamo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+          </div>
+          <h3 class="h3">Applicarlo alla quotidianità</h3>
+          <p>Disponibilità a portare il progetto nelle abitudini di tutti i giorni: le tue e quelle delle persone attorno a te.</p>
+        </article>
+      </div>
+      <p class="chiediamo-close">Tutto il resto <span class="green">te lo diamo noi.</span></p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 7 — IL NOSTRO FILTRO: 30 MINUTI
+       ============================================================ -->
+  <section class="dark">
+    <div class="container">
+      <div class="filtro-grid">
+        <div class="filtro-num">30<span>MINUTI</span></div>
+        <div class="filtro-body">
+          <span class="kicker">Il nostro filtro</span>
+          <h2 class="h2" style="margin-bottom:1.1rem;">30 minuti del tuo tempo. Niente di più.</h2>
+          <p class="lead">Per accedere al progetto ti chiediamo, prima di tutto, una cosa sola: guardare un video di presentazione di <strong>circa 30 minuti</strong>.</p>
+          <p class="lead">Non è un ostacolo, è un filtro. Se non riesci a dedicare mezz'ora a un progetto serio prima ancora di iniziare, probabilmente non siamo le persone giuste l'uno per l'altro. E va bene così: ci risparmiamo del tempo a vicenda.</p>
+          <p class="lead">Considerala una <strong>promessa di rispetto reciproco</strong>: tu ci dai attenzione vera, noi ti diamo un quadro onesto e completo. Poi guardi, capisci e decidi con la tua testa.</p>
+
+          <!-- CTA PRIMARIO #3 (dopo il filtro) — porta alla pagina ponte (redirect WhatsApp). Testo modificabile. -->
+          <a href="thankyoucollaboratori.html" class="btn btn-cta btn-large" data-cta="primario">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Sì, dedico 30 minuti al video
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 8 — FAQ
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Domande frequenti</span>
+        <h2 class="h2">Le risposte alle domande più comuni</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Devo avere esperienza?</summary>
+          <div class="faq-answer">No. La maggior parte delle persone che parte con noi non ha esperienza nel settore. Conta molto di più la <strong>voglia di imparare</strong> e di metterti in gioco. Al resto pensa la formazione.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto tempo richiede davvero?</summary>
+          <div class="faq-answer">Puoi iniziare con <strong>poche ore a settimana</strong> e crescere con i tuoi tempi. Non è un secondo lavoro a orari fissi: lo costruisci attorno alla tua vita, non il contrario.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Posso lasciare se capisco che non fa per me?</summary>
+          <div class="faq-answer">Sì, <strong>liberamente e in qualsiasi momento</strong>. Non vogliamo persone trattenute a forza, vogliamo persone convinte. Se senti che non fa per te, ce lo diciamo con serenità e ci salutiamo.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Ci sono obblighi o vincoli contrattuali?</summary>
+          <div class="faq-answer">Nessun vincolo che ti leghi le mani. Ti spieghiamo <strong>tutto con chiarezza dopo il video</strong>, così sai esattamente come funziona prima di prendere qualsiasi decisione.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Che tipo di formazione riceverò?</summary>
+          <div class="faq-answer">Una formazione <strong>strutturata e progressiva</strong>: dai primi passi fino all'autonomia. Con una figura di riferimento che ti segue, materiali pronti e una community a cui chiedere quando ti serve.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Dopo il video cosa succede?</summary>
+          <div class="faq-answer">Se senti che fa per te, ci risentiamo per una <strong>chiacchierata senza impegno</strong> e capiamo insieme se c'è il match. Se invece non è il tuo momento, nessun problema: il video resta tuo e ci salutiamo con il sorriso.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 9 — CTA FINALE
+       ============================================================ -->
+  <section class="final-cta">
+    <div class="final-cta-inner">
+      <p class="eyebrow">Il primo passo</p>
+      <h2>Trenta minuti per capire<br><span class="green">se è la tua strada.</span></h2>
+      <p>
+        Lascia i tuoi contatti solo se vuoi davvero capire di cosa si tratta. Trattiamo i tuoi dati con riservatezza, non li cediamo a nessuno e non ti tempestiamo di chiamate. Decidi tu se e quando andare avanti.
+      </p>
+
+      <!-- CTA PRIMARIO #4 (finale) — porta alla pagina ponte (redirect WhatsApp). Testo modificabile. -->
+      <a href="thankyoucollaboratori.html" class="btn btn-cta btn-large" data-cta="primario">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Guarda il video di presentazione
+      </a>
+
+      <p class="final-cta-microcopy">Nessun impegno. Nessuna pressione. Solo un quadro onesto del progetto.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="foot">
+    <img class="foot-logo" src="logo%20metodoalcontrario%20rinnovato.png" alt="Metodo al Contrario">
+    <p class="foot-brand">Metodo al Contrario</p>
+    <p>&copy; 2026 metodoalcontrario. Tutti i diritti riservati.</p>
+    <p class="foot-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="foot-divider">&middot;</span>
+      <a href="termini.html">Termini e Condizioni</a>
+    </p>
+  </footer>
+
+  <!-- ============================================================
+       MOTION — reveal discreto allo scroll
+       ============================================================ -->
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var sel = '.hero-inner > *, .section-head, .profilo-card, .no-list li, .diverso-body > *, .offer-card, .chiediamo-card, .chiediamo-close, .filtro-grid, .faq-item, .final-cta-inner > *';
+      var els = [].slice.call(document.querySelectorAll(sel));
+      els.forEach(function (el) { el.classList.add('reveal'); });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>

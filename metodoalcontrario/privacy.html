@@ -69,7 +69,8 @@
 <nav>
   <img class="brand-logo" src="logo%20metodoalcontrario%20rinnovato.png" alt="Metodo al Contrario">
   <span class="brand-name">metodo al contrario</span>
-  <a class="back" href="sardegna.html">&larr; Torna al sito</a>
+  <!-- Torna alla pagina di provenienza (sardegna o collaboratori); fallback sardegna.html se aperta da link diretto -->
+  <a class="back" href="sardegna.html" onclick="if (history.length > 1) { history.back(); return false; }">&larr; Torna al sito</a>
 </nav>
 
 <div class="container">
