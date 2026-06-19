@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ SEO / META ============ -->
+  <title>La tua associazione può autofinanziarsi | Un'economia per la tua associazione</title>
+  <meta name="description" content="Senza chiedere un euro in più ai soci. Un sistema che fa risparmiare i tuoi associati e genera un'economia reale per la tua associazione. Scopri come.">
+  <link rel="canonical" href="https://www.metodoalcontrario.com/associazioni">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.metodoalcontrario.com/associazioni">
+  <meta property="og:title" content="La tua associazione può autofinanziarsi | Un'economia per la tua associazione">
+  <meta property="og:description" content="Senza chiedere un euro in più ai soci. Un sistema che fa risparmiare i tuoi associati e genera un'economia reale per la tua associazione.">
+  <meta property="og:image" content="https://www.metodoalcontrario.com/logo%20metodoalcontrario%20rinnovato.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La tua associazione può autofinanziarsi | Un'economia per la tua associazione">
+  <meta name="twitter:description" content="Senza chiedere un euro in più ai soci. Un sistema che fa risparmiare i tuoi associati e genera un'economia reale per la tua associazione.">
+
+  <!-- ============ Meta Pixel Code ============ -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '959514466876508');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=959514466876508&ev=PageView&noscript=1" alt=""></noscript>
+  <!-- ============ End Meta Pixel Code ============ -->
+
+  <link rel="icon" type="image/png" href="logo%20metodoalcontrario%20rinnovato.png">
+  <link rel="apple-touch-icon" href="logo%20metodoalcontrario%20rinnovato.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       1. RESET & BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --bg: #07090b;
+      --bg-page: #eceef1;
+      --ink: #14181f;
+      --ink-invert: #ffffff;
+      --muted: #5b6470;
+      --muted-invert: rgba(255,255,255,0.72);
+      --line: rgba(20,24,31,0.10);
+      --line-invert: rgba(255,255,255,0.12);
+      --accent: #3b82f6;
+      --accent-strong: #2563eb;
+      --accent-deep: #1e40af;
+      --accent-soft: rgba(37,99,235,0.10);
+      --cta: #2563eb;
+      --cta-press: #1d4ed8;
+      --negative: #e2574c;
+      --negative-soft: rgba(226,87,76,0.10);
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--bg-page);
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(38vmax 38vmax at 14% 14%, rgba(37,99,235,0.07), transparent 60%),
+        radial-gradient(34vmax 34vmax at 88% 70%, rgba(30,64,175,0.05), transparent 60%);
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--accent); color: #fff; }
+
+    /* ============================================================
+       2. UTILITIES
+       ============================================================ */
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
+    .container-narrow { max-width: 820px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
+    .center { text-align: center; }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.3rem;
+    }
+
+    /* ============================================================
+       3. TYPOGRAPHY
+       ============================================================ */
+    .h2 {
+      font-size: clamp(1.65rem, 3.4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+    .h3 {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .lead {
+      font-size: clamp(1.02rem, 1.4vw, 1.15rem);
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 60ch;
+    }
+    .section-head { max-width: 720px; margin-bottom: 2.8rem; }
+    .section-head.center { margin-left: auto; margin-right: auto; }
+
+    /* ============================================================
+       4. BUTTONS
+       ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.15;
+      padding: 16px 30px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-cta { background: var(--cta); color: #fff; box-shadow: 0 12px 26px -12px rgba(37,99,235,0.6); }
+    .btn-cta:hover { background: var(--cta-press); transform: translateY(-2px); box-shadow: 0 18px 34px -14px rgba(37,99,235,0.65); }
+    .btn-cta:active { transform: translateY(0); }
+    .btn-large { padding: 19px 38px; font-size: 1.08rem; }
+    .btn-cta svg { flex-shrink: 0; }
+    a.btn:focus-visible, button.btn:focus-visible { outline: 3px solid rgba(37,99,235,0.45); outline-offset: 2px; }
+    .cta-note { margin-top: 0.9rem; font-size: 0.85rem; color: var(--muted); }
+    .dark .cta-note { color: rgba(255,255,255,0.55); }
+
+    /* ============================================================
+       5. SECTION BASE
+       ============================================================ */
+    section { padding: 4.8rem 0; background: #ffffff; color: var(--ink); position: relative; }
+    section + section { border-top: 1px solid var(--line); }
+    section.gray { background: #f5f6f8; }
+    section.dark {
+      background: var(--bg);
+      color: var(--ink-invert);
+      overflow: hidden;
+      border-top: none;
+    }
+    section.dark::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(60vmax 50vmax at 110% 50%, rgba(37,99,235,0.16), transparent 55%),
+        radial-gradient(50vmax 40vmax at -10% 25%, rgba(37,99,235,0.09), transparent 60%);
+      z-index: 0;
+    }
+    section.dark .h2 { color: var(--ink-invert); }
+    section.dark .lead { color: var(--muted-invert); }
+    section.dark .kicker { color: #93c5fd; background: rgba(37,99,235,0.16); }
+    @media (max-width: 768px) { section { padding: 3.4rem 0; } }
+
+    /* ============================================================
+       6. HERO  (card scura arrotondata su sfondo chiaro — firma del sito)
+       ============================================================ */
+    .hero {
+      border-radius: 32px;
+      margin: 18px;
+      padding: 0 0 4.4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(125% 95% at 50% 0%, #1b1f1b 0%, #0c0e0c 55%, #07090b 100%);
+      box-shadow: 0 30px 80px -40px rgba(0,0,0,0.45);
+      border-top: none;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -14%;
+      width: 92vw;
+      height: 70vh;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(37,99,235,0.26), transparent 62%);
+      filter: blur(24px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-inner { max-width: 840px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .hero .kicker { color: #93c5fd; background: rgba(37,99,235,0.18); }
+    .hero-title {
+      font-size: clamp(2.1rem, 5.2vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.3rem;
+      text-wrap: balance;
+    }
+    .hero-title .line1 { display: block; color: #ffffff; }
+    .hero-title .line2 { display: block; color: var(--accent); }
+    .hero-sub {
+      font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+      color: rgba(255,255,255,0.74);
+      line-height: 1.65;
+      max-width: 620px;
+      margin: 0 auto 2rem;
+    }
+    .hero-sub strong { color: #ffffff; font-weight: 700; }
+    .hero-bullets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 2.3rem;
+    }
+    .hero-bullet {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+    }
+    .hero-bullet::before {
+      content: '';
+      width: 16px; height: 16px; flex-shrink: 0;
+      background-color: var(--accent);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @media (max-width: 600px) {
+      .hero { margin: 10px; border-radius: 22px; }
+      .btn { white-space: normal; }
+    }
+
+    /* HERO — banner + checklist + CTA con sottotesto (disposizione richiesta) */
+    .hero-ribbon {
+      position: relative;
+      z-index: 2;
+      background: var(--accent-deep);
+      color: #fff;
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 1.2rem;
+      line-height: 1.35;
+    }
+    .hero .hero-inner { padding-top: 3.6rem; }
+    .hero-checklist {
+      list-style: none;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      text-align: left;
+      margin: 0.4rem auto 2.4rem;
+    }
+    .hero-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    .hero-checklist li strong { font-weight: 800; }
+    .hero-checklist li::before {
+      content: '';
+      width: 26px; height: 26px; flex-shrink: 0;
+      background-color: var(--accent);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 1px;
+    }
+    .hero-cta { white-space: normal; max-width: 100%; padding: 16px 34px; }
+    .hero-cta .cta-text { display: flex; flex-direction: column; align-items: center; line-height: 1.2; text-align: center; }
+    .hero-cta .cta-main { font-size: 1.12rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
+    .hero-cta .cta-sub { font-size: 0.74rem; font-weight: 600; opacity: 0.88; margin-top: 4px; }
+
+    /* ============================================================
+       7. PROFILI  (Per chi è questo progetto)
+       ============================================================ */
+    .profili-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .profilo-card {
+      padding: 1.7rem 1.7rem 1.8rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px -30px rgba(0,0,0,0.30);
+    }
+    .profilo-tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      padding: 0.32rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .profilo-card h3 { margin-bottom: 0.6rem; }
+    .profilo-card p { color: var(--muted); font-size: 0.98rem; line-height: 1.6; }
+    @media (max-width: 720px) { .profili-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       8. "COSA NON FACCIAMO"  (pain points, X rosse)
+       ============================================================ */
+    .no-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.1rem;
+      max-width: 920px;
+    }
+    .no-list li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 0.9rem;
+      align-items: start;
+      padding: 1.2rem 1.3rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      font-size: 1rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .gray .no-list li { background: #ffffff; }
+    .no-list li::before {
+      content: '';
+      width: 26px; height: 26px; flex-shrink: 0;
+      background-color: var(--negative);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'/><line x1='6' y1='6' x2='18' y2='18'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 2px;
+    }
+    .no-list li strong { font-weight: 700; }
+    @media (max-width: 720px) { .no-list { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       9. "COSA FACCIAMO DI DIVERSO"  (sezione scura, modello vago)
+       ============================================================ */
+    .diverso-body { max-width: 760px; }
+    .diverso-body .lead { margin-bottom: 1.3rem; }
+    .diverso-body .lead:last-of-type { margin-bottom: 2rem; }
+    .diverso-curiosity {
+      display: inline-block;
+      margin: 0.4rem 0 2rem;
+      padding: 1.1rem 1.4rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(37,99,235,0.06);
+      border-radius: 0 12px 12px 0;
+      color: var(--muted-invert);
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+    .diverso-curiosity strong { color: #ffffff; }
+
+    /* ============================================================
+       10. "COSA OFFRIAMO"  (3 card numerate)
+       ============================================================ */
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+    .offer-card {
+      padding: 1.9rem 1.6rem 1.8rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px -30px rgba(0,0,0,0.30);
+      display: flex;
+      flex-direction: column;
+    }
+    .offer-num {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      opacity: 0.9;
+      margin-bottom: 1rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .offer-card h3 { margin-bottom: 0.7rem; }
+    .offer-card p { color: var(--muted); font-size: 0.98rem; line-height: 1.6; }
+    @media (max-width: 820px) { .offer-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       11. "COSA CHIEDIAMO A TE"  (3 punti + chiusura)
+       ============================================================ */
+    .chiediamo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-bottom: 2.6rem;
+    }
+    .chiediamo-card {
+      padding: 1.7rem 1.6rem;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      text-align: left;
+    }
+    .chiediamo-icon {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .chiediamo-icon svg { width: 20px; height: 20px; stroke: var(--accent-deep); }
+    .chiediamo-card h3 { margin-bottom: 0.5rem; }
+    .chiediamo-card p { color: var(--muted); font-size: 0.96rem; line-height: 1.55; }
+    .chiediamo-close {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    .chiediamo-close .green { color: var(--accent-deep); }
+    @media (max-width: 820px) { .chiediamo-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       12. FILTRO  (sezione scura, numero grande)
+       ============================================================ */
+    .filtro-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2.6rem;
+      align-items: center;
+    }
+    .filtro-num {
+      font-size: clamp(5rem, 14vw, 9rem);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+    }
+    .filtro-num span { display: block; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.06em; color: var(--accent); margin-top: 0.4rem; }
+    .filtro-body .lead { margin-bottom: 1.2rem; }
+    .filtro-body .lead:last-of-type { margin-bottom: 1.9rem; }
+    .filtro-body strong { color: #ffffff; }
+    @media (max-width: 760px) {
+      .filtro-grid { grid-template-columns: 1fr; gap: 1rem; text-align: left; }
+      .filtro-num { font-size: clamp(4rem, 26vw, 6rem); }
+    }
+
+    /* ============================================================
+       13. FAQ  (accordion)
+       ============================================================ */
+    .faq-list { max-width: 820px; margin: 0 auto; }
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+      margin-bottom: 0.8rem;
+      overflow: hidden;
+    }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.25rem 1.4rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '';
+      width: 22px; height: 22px; flex-shrink: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%231e40af' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.2s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(180deg); }
+    .faq-item .faq-answer { padding: 0 1.4rem 1.3rem; color: var(--muted); line-height: 1.65; }
+    .faq-item .faq-answer strong { color: var(--ink); }
+
+    /* ============================================================
+       14. FINAL CTA
+       ============================================================ */
+    .final-cta {
+      background: #050709;
+      color: #eef1f4;
+      text-align: center;
+      padding: 5rem 1.5rem;
+      border-top: none;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -30%;
+      width: 90vw; height: 70vh;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse at center, rgba(37,99,235,0.20), transparent 65%);
+      filter: blur(30px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .final-cta-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+    .final-cta .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.74rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: #93c5fd; margin-bottom: 1.2rem;
+    }
+    .final-cta h2 {
+      font-size: clamp(1.7rem, 4vw, 2.55rem);
+      font-weight: 800; line-height: 1.15; letter-spacing: -0.02em;
+      color: #ffffff; margin-bottom: 1.1rem;
+    }
+    .final-cta h2 .green { color: #60a5fa; }
+    .final-cta p {
+      font-size: 1.06rem; color: rgba(238,241,244,0.78); line-height: 1.65;
+      margin: 0 auto 2rem; max-width: 56ch;
+    }
+    .final-cta .final-cta-microcopy {
+      margin: 1.8rem auto 0; font-size: 0.86rem; color: rgba(238,241,244,0.5); line-height: 1.55;
+    }
+
+    /* ============================================================
+       15. FOOTER
+       ============================================================ */
+    footer.foot { background: #050709; color: rgba(238,241,244,0.55); padding: 2.6rem 1.5rem 3rem; text-align: center; }
+    footer.foot .foot-logo {
+      width: 64px; height: 64px; border-radius: 50%; object-fit: cover;
+      margin: 0 auto 1rem; display: block; box-shadow: 0 12px 28px -14px rgba(0,0,0,0.6);
+    }
+    footer.foot .foot-brand {
+      font-weight: 800; font-size: 1.1rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: #eef1f4; margin-bottom: 0.6rem;
+    }
+    footer.foot a { color: rgba(238,241,244,0.55); transition: color 0.2s; }
+    footer.foot a:hover { color: #eef1f4; }
+    footer.foot .foot-links { margin-top: 0.5rem; font-size: 0.9rem; }
+    footer.foot .foot-divider { color: rgba(238,241,244,0.3); margin: 0 8px; }
+
+    /* ============================================================
+       16. MOTION  (reveal discreto, rispetta prefers-reduced-motion)
+       ============================================================ */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22,0.68,0.32,1); }
+    .reveal.is-in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .btn { transition: none; }
+    }
+
+    /* ============================================================
+       17. FORM OVERLAY  (multi-step stile Typeform)
+       ============================================================ */
+    .qf-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      background: radial-gradient(125% 95% at 50% 0%, #14181b 0%, #0a0c0d 55%, #050709 100%);
+      color: #fff;
+    }
+    .qf-overlay.is-open { display: block; }
+    .qf-overlay.is-open .qf-stage { animation: qf-fade-in 0.3s ease both; }
+    body.qf-lock { overflow: hidden; }
+
+    .qf-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: rgba(255,255,255,0.10);
+      z-index: 3;
+    }
+    .qf-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent-deep), var(--accent));
+      border-radius: 0 4px 4px 0;
+      transition: width 0.35s cubic-bezier(0.22,0.68,0.32,1);
+    }
+    .qf-close {
+      position: absolute;
+      top: 18px; right: 18px;
+      z-index: 3;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.16s ease;
+    }
+    .qf-close:hover { background: rgba(255,255,255,0.12); }
+    .qf-close svg { width: 20px; height: 20px; }
+
+    .qf-scroll {
+      position: absolute;
+      inset: 0;
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 1.5rem 3rem;
+    }
+    .qf-stage { width: 100%; max-width: 620px; }
+
+    /* singolo step */
+    .qf-step { display: none; }
+    .qf-step.is-active { display: block; animation: qf-step-in 0.32s cubic-bezier(0.22,0.68,0.32,1) both; }
+    @keyframes qf-step-in { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+    @keyframes qf-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+    .qf-count {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+      color: #93c5fd; margin-bottom: 1rem;
+    }
+    .qf-count svg { width: 14px; height: 14px; }
+    .qf-q {
+      font-size: clamp(1.5rem, 4.4vw, 2.1rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+      text-wrap: balance;
+    }
+    .qf-q .opt { color: var(--muted-invert); font-weight: 600; font-size: 0.95rem; display: block; margin-top: 0.3rem; }
+    .qf-help { color: rgba(255,255,255,0.6); font-size: 0.98rem; margin-bottom: 1.6rem; }
+
+    /* input testo */
+    .qf-input, .qf-textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: 1.15rem;
+      color: #fff;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid rgba(255,255,255,0.22);
+      padding: 0.7rem 0.2rem;
+      transition: border-color 0.18s ease;
+    }
+    .qf-textarea { resize: none; line-height: 1.5; }
+    .qf-input::placeholder, .qf-textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .qf-input:focus, .qf-textarea:focus { outline: none; border-bottom-color: var(--accent); }
+
+    /* campo telefono con prefisso fisso +39 */
+    .qf-phone { display: flex; align-items: center; border-bottom: 2px solid rgba(255,255,255,0.22); transition: border-color 0.18s ease; }
+    .qf-phone:focus-within { border-bottom-color: var(--accent); }
+    .qf-phone-prefix { font-size: 1.15rem; font-weight: 600; color: rgba(255,255,255,0.85); flex-shrink: 0; padding-right: 0.5rem; }
+    .qf-phone .qf-phone-input { border-bottom: none; flex: 1; }
+
+    /* opzioni scelta */
+    .qf-options { display: flex; flex-direction: column; gap: 0.7rem; }
+    .qf-option {
+      display: flex; align-items: center; gap: 0.9rem;
+      width: 100%;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(255,255,255,0.05);
+      border: 1.5px solid rgba(255,255,255,0.16);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      cursor: pointer;
+      transition: border-color 0.16s ease, background 0.16s ease, transform 0.12s ease;
+    }
+    .qf-option:hover { border-color: var(--accent); background: rgba(37,99,235,0.10); }
+    .qf-option:active { transform: scale(0.99); }
+    .qf-option.is-selected { border-color: var(--accent); background: rgba(37,99,235,0.16); }
+    .qf-option .qf-key {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      border-radius: 7px;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 700;
+      color: rgba(255,255,255,0.7);
+    }
+    .qf-option.is-selected .qf-key { border-color: var(--accent); background: var(--accent); color: #0a2a6b; }
+
+    .qf-error { color: #ff9b91; font-size: 0.9rem; margin-top: 0.7rem; min-height: 1.1rem; display: none; }
+    .qf-error.is-shown { display: block; }
+
+    /* nav */
+    .qf-nav { display: flex; align-items: center; gap: 0.8rem; margin-top: 1.8rem; }
+    .qf-next {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-family: inherit; font-weight: 700; font-size: 1.02rem;
+      background: var(--cta); color: #fff;
+      border: none; border-radius: 10px;
+      padding: 14px 26px; cursor: pointer;
+      box-shadow: 0 12px 26px -12px rgba(37,99,235,0.6);
+      transition: background 0.16s ease, transform 0.16s ease;
+    }
+    .qf-next:hover { background: var(--cta-press); transform: translateY(-2px); }
+    .qf-next[disabled] { opacity: 0.6; cursor: default; transform: none; }
+    .qf-back {
+      font-family: inherit; font-weight: 600; font-size: 0.95rem;
+      background: transparent; color: rgba(255,255,255,0.6);
+      border: none; cursor: pointer; padding: 8px 6px;
+    }
+    .qf-back:hover { color: #fff; }
+    .qf-hint { font-size: 0.82rem; color: rgba(255,255,255,0.4); margin-left: auto; }
+    @media (max-width: 600px) { .qf-hint { display: none; } }
+
+    /* step finale: invio */
+    .qf-sending, .qf-final-note { text-align: center; }
+    .qf-final-note { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-top: 1.4rem; }
+    .qf-spinner {
+      width: 44px; height: 44px; margin: 0 auto 1.2rem;
+      border: 4px solid rgba(255,255,255,0.15);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: qf-spin 0.8s linear infinite;
+    }
+    @keyframes qf-spin { to { transform: rotate(360deg); } }
+    /* vista calendario incorporato (branch "Sì, mi piacerebbe") */
+    .qf-overlay.qf-mode-calendar .qf-scroll { align-items: flex-start; }
+    .qf-overlay.qf-mode-calendar .qf-stage { max-width: 920px; }
+    .qf-cal-title { margin-bottom: 0.4rem; }
+    .qf-calendar .qf-help { margin-bottom: 1.2rem; }
+    .qf-cal-frame {
+      width: 100%;
+      height: 660px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 20px 50px -20px rgba(0,0,0,0.5);
+    }
+    .qf-cal-frame iframe { display: block; width: 100%; height: 100%; }
+    @media (max-width: 600px) { .qf-cal-frame { height: 560px; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .qf-step.is-active, .qf-overlay.is-open .qf-stage { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       SEZIONE 1 — HERO
+       ============================================================ -->
+  <header class="hero">
+    <div class="hero-ribbon">Per presidenti e referenti di associazioni</div>
+    <div class="container">
+      <div class="hero-inner">
+        <h1 class="hero-title">
+          <span class="line1">La tua associazione può autofinanziarsi,</span>
+          <span class="line2">senza chiedere un euro in più ai soci.</span>
+        </h1>
+        <p class="hero-sub">
+          Sport, no-profit, cultura: ogni associazione ha lo stesso problema. Servono risorse, ma <strong>gli sponsor non bastano e ai soci non puoi chiedere altro</strong>. Esiste un altro modo: un sistema che fa risparmiare i tuoi associati su quello che già spendono ogni giorno, e che genera <strong>un'economia reale</strong> per la tua associazione.
+        </p>
+        <ul class="hero-checklist">
+          <li><span><strong>Nessun costo</strong> per l'associazione</span></li>
+          <li><span>I soci <strong>risparmiano davvero</strong></span></li>
+          <li><span>Un'economia <strong>che si rinnova</strong></span></li>
+        </ul>
+
+        <!-- CTA PRIMARIO #1 (hero) — apre il form a step -->
+        <button type="button" class="btn btn-cta btn-large hero-cta" data-open-form>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="11 8 15 12 11 16"/><line x1="8" y1="12" x2="15" y2="12"/></svg>
+          <span class="cta-text">
+            <span class="cta-main">Prenota una call</span>
+            <span class="cta-sub">Una call di 15 minuti, senza impegno</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SEZIONE 2 — PER CHI È QUESTO PROGETTO (identificazione)
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Per chi è</span>
+        <h2 class="h2">Per quale associazione è pensato?</h2>
+        <p class="lead" style="margin:0.8rem auto 0;">Se gestisci una di queste realtà, questo sistema fa per te.</p>
+      </div>
+      <div class="profili-grid">
+        <article class="profilo-card">
+          <span class="profilo-tag">01</span>
+          <h3 class="h3">Associazioni e società sportive (ASD)</h3>
+          <p>Palestre, polisportive, squadre. Hai costi fissi, attrezzatura, iscrizioni, e ogni anno la corsa a trovare sponsor.</p>
+        </article>
+        <article class="profilo-card">
+          <span class="profilo-tag">02</span>
+          <h3 class="h3">No-profit e volontariato</h3>
+          <p>Hai cause da sostenere e attività da portare avanti, ma donazioni e fondi non bastano mai.</p>
+        </article>
+        <article class="profilo-card">
+          <span class="profilo-tag">03</span>
+          <h3 class="h3">Circoli culturali, ricreativi, pro loco</h3>
+          <p>Organizzi eventi, mantieni una struttura, e ti serve un'entrata stabile che non dipenda dalla buona volontà di pochi.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 3 — COSA NON FACCIAMO (pain points per contrasto)
+       ============================================================ -->
+  <section class="gray">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Il problema</span>
+        <h2 class="h2">Lo conosci già, il problema di ogni associazione</h2>
+      </div>
+      <ul class="no-list">
+        <li><span>Cerchi sponsor che spesso <strong>non arrivano</strong>, o arrivano dopo lunghe trattative e per una volta sola.</span></li>
+        <li><span>Ai tuoi soci <strong>non puoi chiedere altri soldi</strong>: hanno già pagato la quota.</span></li>
+        <li><span>I costi fissi, struttura, eventi, attrezzatura, <strong>aumentano. Le risorse no</strong>.</span></li>
+        <li><span>Per ogni nuova iniziativa devi <strong>ricominciare da capo</strong> a cercare fondi.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 4 — COSA FACCIAMO DI DIVERSO (modello vago, curiosity gap)
+       ============================================================ -->
+  <section class="dark">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Cosa facciamo di diverso</span>
+        <h2 class="h2">Da noi l'associazione genera la sua economia, senza chiedere nulla a nessuno</h2>
+      </div>
+      <div class="diverso-body">
+        <p class="lead">Esiste un sistema che i tuoi soci usano per <strong style="color:#fff;">risparmiare sulle spese di ogni giorno</strong>, quelle che fanno comunque: spesa, carburante, acquisti. Loro risparmiano, e ogni volta che lo usano generano un'economia per la tua associazione.</p>
+        <p class="lead">Non è una sponsorizzazione una tantum che finisce subito. È <strong style="color:#fff;">un'entrata che si rinnova nel tempo</strong>: più i tuoi soci la usano, più cresce. E l'associazione la incassa in modo regolare e legale.</p>
+        <div class="diverso-curiosity">
+          Come funziona <strong>nel dettaglio</strong> te lo spieghiamo in una call. Di persona si capisce molto meglio che in mille righe scritte qui.
+        </div>
+
+        <!-- CTA SECONDARIO #2 (mid-page) — apre il form a step -->
+        <button type="button" class="btn btn-cta" data-open-form>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Scopri come funziona
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 5 — COSA OFFRIAMO (3 punti chiave)
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Cosa offriamo</span>
+        <h2 class="h2">Cosa ottiene la tua associazione</h2>
+      </div>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <div class="offer-num">01</div>
+          <h3 class="h3">Un'entrata che si rinnova</h3>
+          <p>Non un contributo una tantum, ma un'economia che continua nel tempo, senza rincorrere sponsor a ogni evento.</p>
+        </article>
+        <article class="offer-card">
+          <div class="offer-num">02</div>
+          <h3 class="h3">I tuoi soci risparmiano</h3>
+          <p>I soci usano un'app per risparmiare sulle spese di tutti i giorni. Offri loro un vantaggio concreto, e la loro fedeltà all'associazione cresce.</p>
+        </article>
+        <article class="offer-card">
+          <div class="offer-num">03</div>
+          <h3 class="h3">Più visibilità, nuovi soci</h3>
+          <p>Se la tua è un'associazione aperta al pubblico, entri in una vetrina vista da oltre 125.000 persone, dove chi cerca attività nella tua zona può trovarti.</p>
+        </article>
+        <article class="offer-card">
+          <div class="offer-num">04</div>
+          <h3 class="h3">Un'economia anche per te</h3>
+          <p>Oltre a quella dell'associazione, come presidente o referente costruisci un'economia personale separata e automatica. Due flussi distinti.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 6 — COSA CHIEDIAMO A TE
+       ============================================================ -->
+  <section class="gray">
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Cosa serve da te</span>
+        <h2 class="h2">Cosa serve da parte tua</h2>
+      </div>
+      <div class="chiediamo-grid">
+        <article class="chiediamo-card">
+          <div class="chiediamo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+          </div>
+          <h3 class="h3">Presentarlo ai tuoi soci</h3>
+          <p>In assemblea, in un messaggio, con i materiali già pronti che ti diamo noi. Niente di complicato.</p>
+        </article>
+        <article class="chiediamo-card">
+          <div class="chiediamo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="h3">Crederci e spingerlo un po'</h3>
+          <p>Più tu ci credi e lo proponi, più i soci aderiscono e più l'economia cresce. Il motore sei tu.</p>
+        </article>
+        <article class="chiediamo-card">
+          <div class="chiediamo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h3 class="h3">Nessun costo, nessun rischio</h3>
+          <p>L'associazione non spende nulla per entrare, e i soci nemmeno. Si parte e basta.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 7 — IL NOSTRO FILTRO: CANDIDATURA + CALL 15 MIN
+       ============================================================ -->
+  <section class="dark">
+    <div class="container">
+      <div class="filtro-grid">
+        <div class="filtro-num">15<span>MINUTI</span></div>
+        <div class="filtro-body">
+          <span class="kicker">Il primo passo</span>
+          <h2 class="h2" style="margin-bottom:1.1rem;">Il primo passo: una call di 15 minuti</h2>
+          <p class="lead">Non lavoriamo con tutte le associazioni, ma con quelle giuste, dove c'è un referente che ci crede. Per questo il primo passo è una breve candidatura e, se c'è il match, una <strong>call di 15 minuti</strong> dove ti spieghiamo tutto con calma e costruiamo una stima sulla tua realtà.</p>
+          <p class="lead">Nessun impegno: capiamo insieme se ha senso, e poi decidi tu.</p>
+
+          <!-- CTA PRIMARIO #3 (dopo il filtro) — apre il form a step -->
+          <button type="button" class="btn btn-cta btn-large" data-open-form>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Prenota la call
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 8 — FAQ
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">Domande frequenti</span>
+        <h2 class="h2">Le risposte alle domande più comuni</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Quanto costa all'associazione?</summary>
+          <div class="faq-answer"><strong>Niente.</strong> L'associazione non spende nulla per entrare, e i soci nemmeno. Anzi, i soci risparmiano usando l'app per le loro spese di ogni giorno.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Come incassa concretamente l'associazione?</summary>
+          <div class="faq-answer">In modo <strong>regolare e legale</strong>. Ti spieghiamo nel dettaglio in call come funziona, in base alla forma della tua associazione.</div>
+        </details>
+        <details class="faq-item">
+          <summary>I miei soci devono pagare qualcosa?</summary>
+          <div class="faq-answer"><strong>No, mai.</strong> Usano un'app per risparmiare sulle spese che fanno comunque. È un vantaggio per loro, non un costo.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto lavoro richiede da parte mia?</summary>
+          <div class="faq-answer"><strong>Poco.</strong> Presenti il sistema ai soci con i materiali pronti che ti diamo, e noi ti seguiamo passo passo.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Vale solo per le associazioni sportive?</summary>
+          <div class="faq-answer"><strong>No.</strong> Funziona per ASD, no-profit, circoli culturali, pro loco: qualsiasi realtà con dei soci o una community.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Cosa succede dopo la candidatura?</summary>
+          <div class="faq-answer">Se c'è il match, ci sentiamo per una <strong>call di 15 minuti</strong>, senza impegno, e capiamo insieme se ha senso per la tua associazione.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEZIONE 9 — CTA FINALE
+       ============================================================ -->
+  <section class="final-cta">
+    <div class="final-cta-inner">
+      <p class="eyebrow">Il primo passo</p>
+      <h2>Pronto a dare alla tua associazione<br><span class="green">un'entrata che si rinnova?</span></h2>
+      <p>
+        Candidati solo se vuoi davvero capire come funziona. Nessun impegno, nessuna pressione. Decidi tu se e quando andare avanti.
+      </p>
+
+      <!-- CTA PRIMARIO #4 (finale) — apre il form a step -->
+      <button type="button" class="btn btn-cta btn-large" data-open-form>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Prenota la call
+      </button>
+
+      <p class="final-cta-microcopy">Senza costi per l'associazione. Senza chiedere nulla ai soci.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="foot">
+    <img class="foot-logo" src="logo%20metodoalcontrario%20rinnovato.png" alt="Metodo al Contrario">
+    <p class="foot-brand">Metodo al Contrario</p>
+    <p>&copy; 2026 metodoalcontrario. Tutti i diritti riservati.</p>
+    <p class="foot-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="foot-divider">&middot;</span>
+      <a href="termini.html">Termini e Condizioni</a>
+    </p>
+  </footer>
+
+  <!-- ============================================================
+       FORM OVERLAY — multi-step (stile Typeform)
+       ============================================================ -->
+  <div class="qf-overlay" id="qfOverlay" role="dialog" aria-modal="true" aria-label="Form per associazioni">
+    <div class="qf-bar"><div class="qf-bar-fill" id="qfBarFill"></div></div>
+    <button type="button" class="qf-close" id="qfClose" aria-label="Chiudi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <div class="qf-scroll">
+      <div class="qf-stage" id="qfStage">
+        <!-- gli step vengono generati dinamicamente via JS in #qfStage -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MOTION — reveal discreto allo scroll
+       ============================================================ -->
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var sel = '.hero-inner > *, .section-head, .profilo-card, .no-list li, .diverso-body > *, .offer-card, .chiediamo-card, .chiediamo-close, .filtro-grid, .faq-item, .final-cta-inner > *';
+      var els = [].slice.call(document.querySelectorAll(sel));
+      els.forEach(function (el) { el.classList.add('reveal'); });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+  <!-- ============================================================
+       FORM MULTI-STEP — invio a Supabase + Calendly incorporato
+       ============================================================ -->
+  <script>
+  (function () {
+    /* =========================================================
+       CONFIG
+       ========================================================= */
+    var SUPABASE_URL  = 'https://kmddvzsufoyagigncjlw.supabase.co';
+    var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttZGR2enN1Zm95YWdpZ25jamx3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3MTcwMTksImV4cCI6MjA5NzI5MzAxOX0.RrWR2S_YISP3lEl2V0qhkp7WDhb0NQqkTI2s1yZKE2g';
+    var SUPABASE_TABLE = 'associazioni_leads';
+
+    // Calendly incorporato (con precompilazione di nome/email/telefono dal form)
+    var CALENDLY_URL = 'https://calendly.com/elementanovateam/30min';
+
+    /* =========================================================
+       DOMANDE — 'key' = colonne della tabella associazioni_leads
+       (tutti i completamenti vanno a Calendly: nessun branching)
+       ========================================================= */
+    var QUESTIONS = [
+      { key: 'nome', type: 'text', label: 'Iniziamo: qual è il nome completo del referente?', help: 'Nome e cognome.', placeholder: 'Nome e cognome', required: true },
+      { key: 'email', type: 'email', label: 'A quale email possiamo scriverti?', help: 'La usiamo solo per ricontattarti, niente spam.', placeholder: 'nome@email.com', required: true },
+      { key: 'telefono', type: 'tel', label: 'E il tuo numero di telefono?', help: 'Il prefisso +39 è già impostato: scrivi solo le cifre (max 10).', placeholder: '333 1234567', required: true },
+      { key: 'ruolo', type: 'choice', label: 'Che ruolo hai nell\'associazione?', required: true, options: [
+        { value: 'Presidente', label: 'Sono il presidente' },
+        { value: 'Direttivo / referente', label: 'Faccio parte del direttivo / sono un referente' },
+        { value: 'Socio o volontario', label: 'Sono socio o volontario' },
+        { value: 'Altro', label: 'Altro' }
+      ]},
+      { key: 'tipo_associazione', type: 'choice', label: 'Di che tipo di associazione si tratta?', required: true, options: [
+        { value: 'Sportiva (ASD/SSD)', label: 'Sportiva (ASD/SSD)' },
+        { value: 'No-profit / volontariato', label: 'No-profit / volontariato' },
+        { value: 'Culturale, ricreativa o pro loco', label: 'Culturale, ricreativa o pro loco' },
+        { value: 'Altro', label: 'Altro' }
+      ]},
+      { key: 'numero_soci', type: 'choice', label: 'Quanti soci avete, più o meno?', required: true, options: [
+        { value: 'Meno di 50', label: 'Meno di 50' },
+        { value: 'Tra 50 e 150', label: 'Tra 50 e 150' },
+        { value: 'Tra 150 e 500', label: 'Tra 150 e 500' },
+        { value: 'Più di 500', label: 'Più di 500' }
+      ]},
+      { key: 'fondi_attuali', type: 'textarea', label: 'Come trovate oggi i fondi o gli sponsor per portare avanti l\'associazione?', help: 'Risposta libera, bastano due righe.', placeholder: 'Scrivi qui...', required: false },
+      { key: 'interesse', type: 'choice', label: 'Ti piacerebbe scoprire un modo per far autofinanziare la tua associazione, senza chiedere un euro in più ai soci e senza costi per l\'associazione?', required: true, options: [
+        { value: 'Sì, mi interessa molto', label: 'Sì, mi interessa molto' },
+        { value: 'Sì, sono curioso/a di capire come funziona', label: 'Sì, sono curioso/a di capire come funziona' },
+        { value: 'Non ne sono ancora sicuro/a', label: 'Non ne sono ancora sicuro/a' }
+      ]}
+    ];
+
+    /* =========================================================
+       STATO + RIFERIMENTI DOM
+       ========================================================= */
+    var overlay = document.getElementById('qfOverlay');
+    var stage   = document.getElementById('qfStage');
+    var barFill = document.getElementById('qfBarFill');
+    var closeBtn= document.getElementById('qfClose');
+    var answers = {};
+    var current = 0;
+    var sending = false;
+    var TOTAL = QUESTIONS.length;
+
+    /* =========================================================
+       COSTRUZIONE STEP
+       ========================================================= */
+    function buildSteps() {
+      QUESTIONS.forEach(function (q, i) {
+        var step = document.createElement('div');
+        step.className = 'qf-step';
+        step.setAttribute('data-step', i);
+
+        var count = '<div class="qf-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Domanda ' + (i + 1) + ' di ' + TOTAL + '</div>';
+        var title = '<h2 class="qf-q">' + q.label + (q.required ? '' : '<span class="opt">(facoltativa)</span>') + '</h2>';
+        var help  = q.help ? '<p class="qf-help">' + q.help + '</p>' : '';
+        var field = '';
+
+        if (q.type === 'choice') {
+          field += '<div class="qf-options">';
+          q.options.forEach(function (opt, j) {
+            var keyLabel = String.fromCharCode(65 + j);
+            field += '<button type="button" class="qf-option" data-value="' + opt.value.replace(/"/g, '&quot;') + '">' +
+                       '<span class="qf-key">' + keyLabel + '</span><span>' + opt.label + '</span></button>';
+          });
+          field += '</div>';
+        } else if (q.type === 'textarea') {
+          field = '<textarea class="qf-textarea" rows="3" placeholder="' + (q.placeholder || '') + '"></textarea>';
+        } else if (q.type === 'tel') {
+          field = '<div class="qf-phone"><span class="qf-phone-prefix">+39</span>' +
+                  '<input class="qf-input qf-phone-input" type="tel" inputmode="numeric" maxlength="10" placeholder="' + (q.placeholder || '') + '" autocomplete="off"></div>';
+        } else {
+          var inputType = (q.type === 'email') ? 'email' : 'text';
+          field = '<input class="qf-input" type="' + inputType + '" placeholder="' + (q.placeholder || '') + '" autocomplete="off">';
+        }
+
+        var error = '<div class="qf-error"></div>';
+
+        var nextLabel = (i === TOTAL - 1) ? 'Invia e scegli l\'orario' : 'Avanti';
+        var back = (i > 0) ? '<button type="button" class="qf-back">← Indietro</button>' : '';
+        var hint = (q.type === 'choice') ? '' : '<span class="qf-hint">premi Invio ↵</span>';
+        var nav = '<div class="qf-nav">' +
+                    '<button type="button" class="qf-next">' + nextLabel +
+                      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
+                    '</button>' + back + hint +
+                  '</div>';
+
+        step.innerHTML = count + title + help + field + error + nav;
+        stage.appendChild(step);
+      });
+
+      var hp = document.createElement('input');
+      hp.type = 'text';
+      hp.id = 'qfHp';
+      hp.tabIndex = -1;
+      hp.setAttribute('autocomplete', 'off');
+      hp.setAttribute('aria-hidden', 'true');
+      hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0;';
+      stage.appendChild(hp);
+
+      bindStepEvents();
+    }
+
+    function stepEls() { return stage.querySelectorAll('.qf-step'); }
+
+    function bindStepEvents() {
+      stepEls().forEach(function (step, i) {
+        var q = QUESTIONS[i];
+        var nextBtn = step.querySelector('.qf-next');
+        var backBtn = step.querySelector('.qf-back');
+
+        if (backBtn) backBtn.addEventListener('click', function () { goTo(i - 1); });
+        nextBtn.addEventListener('click', function () { tryAdvance(i); });
+
+        if (q.type === 'choice') {
+          step.querySelectorAll('.qf-option').forEach(function (optBtn) {
+            optBtn.addEventListener('click', function () {
+              step.querySelectorAll('.qf-option').forEach(function (b) { b.classList.remove('is-selected'); });
+              optBtn.classList.add('is-selected');
+              answers[q.key] = optBtn.getAttribute('data-value');
+              clearError(step);
+              setTimeout(function () { tryAdvance(i); }, 240);
+            });
+          });
+        } else {
+          var input = step.querySelector('.qf-input, .qf-textarea');
+          input.addEventListener('input', function () { clearError(step); });
+          if (q.type === 'tel') {
+            input.addEventListener('input', function () {
+              var d = input.value.replace(/[^0-9]/g, '').slice(0, 10);
+              if (input.value !== d) input.value = d;
+            });
+          }
+          if (q.type !== 'textarea') {
+            input.addEventListener('keydown', function (e) {
+              if (e.key === 'Enter') { e.preventDefault(); tryAdvance(i); }
+            });
+          } else {
+            input.addEventListener('keydown', function (e) {
+              if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); tryAdvance(i); }
+            });
+          }
+        }
+      });
+    }
+
+    /* =========================================================
+       VALIDAZIONE + AVANZAMENTO
+       ========================================================= */
+    function clearError(step) {
+      var err = step.querySelector('.qf-error');
+      err.classList.remove('is-shown');
+      err.textContent = '';
+    }
+    function showError(step, msg) {
+      var err = step.querySelector('.qf-error');
+      err.textContent = msg;
+      err.classList.add('is-shown');
+    }
+
+    function validate(i) {
+      var q = QUESTIONS[i];
+      var step = stepEls()[i];
+      var val;
+
+      if (q.type === 'choice') {
+        val = answers[q.key];
+        if (q.required && !val) { showError(step, 'Scegli un’opzione per continuare.'); return false; }
+        return true;
+      }
+
+      var input = step.querySelector('.qf-input, .qf-textarea');
+      val = (input.value || '').trim();
+      answers[q.key] = val;
+
+      if (q.required && !val) { showError(step, 'Questo campo serve per andare avanti.'); return false; }
+      if (q.type === 'email' && val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+        showError(step, 'Controlla l’email: sembra non valida.'); return false;
+      }
+      if (q.type === 'tel') {
+        var digits = val.replace(/[^0-9]/g, '').slice(0, 10);
+        if (q.required && !digits) { showError(step, 'Inserisci il tuo numero di telefono.'); return false; }
+        if (digits && digits.length < 9) { showError(step, 'Numero troppo corto: scrivi le cifre senza prefisso.'); return false; }
+        answers[q.key] = digits ? '+39' + digits : '';
+      }
+      return true;
+    }
+
+    function tryAdvance(i) {
+      if (!validate(i)) return;
+      if (i === TOTAL - 1) { submit(); return; }
+      goTo(i + 1);
+    }
+
+    function goTo(i) {
+      if (i < 0 || i >= TOTAL) return;
+      var steps = stepEls();
+      steps.forEach(function (s) { s.classList.remove('is-active'); });
+      steps[i].classList.add('is-active');
+      current = i;
+      updateBar();
+      focusStep(steps[i], QUESTIONS[i]);
+    }
+
+    function updateBar() {
+      var pct = Math.round((current / TOTAL) * 100);
+      barFill.style.width = pct + '%';
+    }
+
+    function focusStep(step, q) {
+      if (q.type === 'choice') return;
+      var input = step.querySelector('.qf-input, .qf-textarea');
+      if (input) setTimeout(function () { input.focus(); }, 80);
+    }
+
+    /* =========================================================
+       INVIO: Supabase -> Calendly incorporato
+       ========================================================= */
+    function renderSending() {
+      stage.innerHTML =
+        '<div class="qf-sending">' +
+          '<div class="qf-spinner"></div>' +
+          '<h2 class="qf-q">Ci siamo!</h2>' +
+          '<p class="qf-help">Stiamo salvando i tuoi dati e ti portiamo al calendario per prenotare la call...</p>' +
+        '</div>';
+      barFill.style.width = '100%';
+    }
+
+    function loadCalendly(cb) {
+      if (window.Calendly) { cb(); return; }
+      var existing = document.getElementById('calendly-widget-js');
+      if (existing) { existing.addEventListener('load', cb); return; }
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      document.head.appendChild(link);
+      var s = document.createElement('script');
+      s.id = 'calendly-widget-js';
+      s.src = 'https://assets.calendly.com/assets/external/widget.js';
+      s.async = true;
+      s.onload = cb;
+      document.head.appendChild(s);
+    }
+
+    function renderCalendar() {
+      overlay.classList.add('qf-mode-calendar');
+      stage.innerHTML =
+        '<div class="qf-calendar">' +
+          '<div class="qf-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ultimo passo</div>' +
+          '<h2 class="qf-q qf-cal-title">Scegli l\'orario per la tua call</h2>' +
+          '<p class="qf-help">Seleziona uno slot: i tuoi dati sono già compilati, ti resta solo confermare. Ti chiameremo noi al telefono all\'orario scelto.</p>' +
+          '<div class="qf-cal-frame" id="qfCalEmbed"></div>' +
+        '</div>';
+      barFill.style.width = '100%';
+      loadCalendly(function () {
+        if (!window.Calendly) return;
+        var el = document.getElementById('qfCalEmbed');
+        if (!el) return;
+        window.Calendly.initInlineWidget({
+          url: CALENDLY_URL,
+          parentElement: el,
+          prefill: {
+            name: answers.nome || '',
+            email: answers.email || '',
+            customAnswers: { a1: answers.telefono || '' }
+          }
+        });
+      });
+    }
+
+    function fireLead() {
+      try { if (typeof fbq === 'function') fbq('track', 'Lead'); } catch (e) {}
+    }
+
+    function submit() {
+      if (sending) return;
+      var hp = document.getElementById('qfHp');
+      if (hp && hp.value) { return; }
+
+      sending = true;
+      renderSending();
+      fireLead();
+
+      var payload = {
+        nome: answers.nome || null,
+        email: answers.email || null,
+        telefono: answers.telefono || null,
+        ruolo: answers.ruolo || null,
+        tipo_associazione: answers.tipo_associazione || null,
+        numero_soci: answers.numero_soci || null,
+        fondi_attuali: answers.fondi_attuali || null,
+        interesse: answers.interesse || null,
+        fonte: 'associazioni'
+      };
+
+      var done = false;
+      function finish() { if (done) return; done = true; renderCalendar(); }
+      var failsafe = setTimeout(finish, 3500);
+
+      var configured = SUPABASE_URL.indexOf('INSERISCI') === -1 && SUPABASE_ANON.indexOf('INSERISCI') === -1;
+      if (!configured) {
+        clearTimeout(failsafe);
+        setTimeout(finish, 600);
+        return;
+      }
+
+      fetch(SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/' + SUPABASE_TABLE, {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_ANON,
+          'Authorization': 'Bearer ' + SUPABASE_ANON,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify(payload)
+      }).catch(function () { /* lead non bloccato: si va comunque al calendario */ })
+        .finally(function () { clearTimeout(failsafe); finish(); });
+    }
+
+    /* =========================================================
+       APERTURA / CHIUSURA OVERLAY
+       ========================================================= */
+    function resetForm() {
+      sending = false;
+      answers = {};
+      current = 0;
+      overlay.classList.remove('qf-mode-calendar');
+      stage.innerHTML = '';
+      buildSteps();
+      barFill.style.width = '0%';
+    }
+    function openForm() {
+      resetForm();
+      overlay.classList.add('is-open');
+      document.body.classList.add('qf-lock');
+      goTo(0);
+    }
+    function closeForm() {
+      overlay.classList.remove('is-open');
+      document.body.classList.remove('qf-lock');
+    }
+
+    document.querySelectorAll('[data-open-form]').forEach(function (btn) {
+      btn.addEventListener('click', openForm);
+    });
+    closeBtn.addEventListener('click', closeForm);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open') && !sending) closeForm();
+    });
+  })();
+  </script>
+
+</body>
+</html>
