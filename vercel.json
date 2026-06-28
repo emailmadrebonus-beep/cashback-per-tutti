@@ -1,12 +1,13 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "/rete", "permanent": false }
+    { "source": "/", "destination": "/rete", "permanent": false },
+    { "source": "/cashback", "destination": "/collaboratori", "permanent": false }
   ],
   "rewrites": [
     { "source": "/rete", "destination": "/rete.html" },
     { "source": "/network", "destination": "/network.html" },
-    { "source": "/cashback", "destination": "/cashback.html" },
+    { "source": "/collaboratori", "destination": "/collaboratori.html" },
     { "source": "/thankyou", "destination": "/thankyou.html" },
     { "source": "/thankyounetwork", "destination": "/thankyounetwork.html" },
     { "source": "/thankyoucashback", "destination": "/thankyoucashback.html" },
