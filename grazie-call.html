@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call prenotata — Cashback per Tutti</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1427461369047716');
+  fbq('track', 'PageView');
+  fbq('track', 'Schedule');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1427461369047716&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel -->
+  <!-- TikTok Pixel -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D54QCU3C77U3FL78T0R0');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- End TikTok Pixel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: #f5f7fb;
+      color: #0a0a0a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+    .bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+    .mesh-gradient {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 15% 25%, rgba(37,99,235,0.12) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 50% at 85% 75%, rgba(37,99,235,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 5%, rgba(59,130,246,0.06) 0%, transparent 55%);
+    }
+    .grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+    }
+    .content {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      max-width: 560px;
+    }
+    .check {
+      width: 84px; height: 84px; border-radius: 50%;
+      margin: 0 auto 1.6rem;
+      background: #2563eb;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 16px 40px -12px rgba(37,99,235,0.5);
+      animation: pop 0.5s cubic-bezier(0.22,0.68,0.32,1) both;
+    }
+    .check svg { width: 44px; height: 44px; }
+    @keyframes pop { from { transform: scale(0.4); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 800; line-height: 1.12; letter-spacing: -0.02em;
+      margin-bottom: 0.9rem;
+    }
+    h1 .green { color: #2563eb; }
+    .lead {
+      font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+      color: #475569; line-height: 1.6;
+      margin: 0 auto; max-width: 460px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg">
+    <div class="mesh-gradient"></div>
+    <div class="grid-bg"></div>
+  </div>
+
+  <div class="content">
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1>Call <span class="green">prenotata!</span></h1>
+    <p class="lead">Abbiamo registrato la tua richiesta. Ti chiameremo al numero che hai lasciato, all'orario che hai scelto.</p>
+  </div>
+
+</body>
+</html>
