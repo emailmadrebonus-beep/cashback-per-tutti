@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cashback per Tutti — Una nuova entrata per la tua associazione</title>
-  <meta name="description" content="Per associazioni: offri ai soci un vantaggio gratuito, entra in una community di oltre 120.000 persone e apri una nuova entrata. Senza rincorrere sponsor né alzare le quote.">
+  <title>Webinar gratuito 8 Luglio — Una nuova entrata per la tua associazione</title>
+  <meta name="description" content="Webinar gratuito dell'8 luglio per associazioni: scopri come offrire ai soci un vantaggio gratuito, entrare in una community di oltre 120.000 persone e aprire una nuova entrata. Senza rincorrere sponsor né alzare le quote.">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.cashbackpertutti.com/associazioni">
-  <meta property="og:title" content="Cashback per Tutti — Una nuova entrata per la tua associazione">
-  <meta property="og:description" content="Offri ai soci un vantaggio gratuito, entra in una community di oltre 120.000 persone e apri una nuova entrata. Senza rincorrere sponsor né alzare le quote.">
+  <meta property="og:url" content="https://www.cashbackpertutti.com/associazioni-webinar">
+  <meta property="og:title" content="Webinar gratuito 8 Luglio — Una nuova entrata per la tua associazione">
+  <meta property="og:description" content="Mercoledì 8 luglio, ore 21:00, in diretta su Zoom. Scopri come dare una nuova entrata alla tua associazione senza rincorrere sponsor né alzare le quote.">
   <meta property="og:image" content="https://www.cashbackpertutti.com/cashback-mascot-logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cashback per Tutti — Una nuova entrata per la tua associazione">
-  <meta name="twitter:description" content="Offri ai soci un vantaggio gratuito, entra in una community di oltre 120.000 persone e apri una nuova entrata.">
+  <meta name="twitter:title" content="Webinar gratuito 8 Luglio — Una nuova entrata per la tua associazione">
+  <meta name="twitter:description" content="Mercoledì 8 luglio, ore 21:00, in diretta su Zoom. Come dare una nuova entrata alla tua associazione.">
   <meta name="twitter:image" content="https://www.cashbackpertutti.com/cashback-mascot-logo.png">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -118,9 +118,17 @@
     .hero-title { font-weight: 900; line-height: 1.04; letter-spacing: -0.03em; margin: 0 auto 1.4rem; display: flex; flex-direction: column; align-items: center; gap: 0.1em; }
     .hero-title .line1 { font-size: clamp(2.2rem, 5vw, 3.8rem); color: #ffffff; }
     .hero-title .line2 { font-size: clamp(2.2rem, 5vw, 3.8rem); color: #3b82f6; }
-    .hero-sub { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: rgba(255,255,255,0.74); line-height: 1.55; max-width: 760px; margin: 0 auto 1.4rem; }
+    .hero-sub { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: rgba(255,255,255,0.74); line-height: 1.55; max-width: 760px; margin: 0 auto 1.6rem; }
     .hero-sub strong { color: #ffffff; font-weight: 700; }
-    .hero-note { font-size: 0.98rem; color: rgba(255,255,255,0.6); max-width: 620px; margin: 0 auto 2rem; }
+    /* webinar date/time chips */
+    .webinar-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; margin: 0 auto 1.8rem; }
+    .webinar-chip {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(37,99,235,0.14); border: 1px solid rgba(59,130,246,0.4);
+      color: #ffffff; font-weight: 700; font-size: 0.92rem;
+      padding: 0.55rem 0.95rem; border-radius: 999px;
+    }
+    .webinar-chip svg { width: 17px; height: 17px; stroke: #3b82f6; flex-shrink: 0; }
     .hero-checklist { list-style: none; display: inline-flex; flex-direction: column; gap: 0.8rem; text-align: left; margin: 0.2rem auto 2.3rem; }
     .hero-checklist li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 1.05rem; font-weight: 600; color: #ffffff; }
     .hero-checklist li strong { font-weight: 800; }
@@ -130,6 +138,8 @@
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
       background-repeat: no-repeat; background-position: center;
     }
+    .optin-note { font-size: 0.95rem; color: rgba(255,255,255,0.62); max-width: 560px; margin: 1.5rem auto 0; line-height: 1.55; }
+    .optin-note strong { color: #ffffff; font-weight: 700; }
     @media (max-width: 600px) { .hero { margin: 10px; border-radius: 22px; } }
 
     /* ============== PROBLEMA (pain cards) ============== */
@@ -168,7 +178,7 @@
     .entrata-box strong { color: #ffffff; }
     .entrata-box .hl { color: #3b82f6; font-weight: 700; }
 
-    /* ============== I PASSI ============== */
+    /* ============== I PASSI / AGENDA ============== */
     .steps-list { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto; }
     .step-item {
       background: #ffffff; border: 1px solid rgba(0,0,0,0.07); border-radius: 18px;
@@ -251,6 +261,8 @@
     .qf-textarea { resize: none; line-height: 1.5; }
     .qf-input::placeholder, .qf-textarea::placeholder { color: rgba(255,255,255,0.35); }
     .qf-input:focus, .qf-textarea:focus { outline: none; border-bottom-color: #3b82f6; }
+    .qf-fields { display: flex; flex-direction: column; gap: 1.1rem; }
+    .qf-field-label { display: block; font-size: 0.9rem; font-weight: 600; color: rgba(255,255,255,0.7); margin-bottom: 0.35rem; }
     .qf-options { display: flex; flex-direction: column; gap: 0.7rem; }
     .qf-option { display: flex; align-items: center; gap: 0.9rem; width: 100%; text-align: left; font-family: inherit; font-size: 1.05rem; font-weight: 600; color: #fff; background: rgba(255,255,255,0.05); border: 1.5px solid rgba(255,255,255,0.16); border-radius: 12px; padding: 1rem 1.1rem; cursor: pointer; transition: border-color 0.16s ease, background 0.16s ease, transform 0.12s ease; }
     .qf-option:hover { border-color: #3b82f6; background: rgba(37,99,235,0.12); }
@@ -271,21 +283,41 @@
     .qf-sending { text-align: center; }
     .qf-spinner { width: 44px; height: 44px; margin: 0 auto 1.2rem; border: 4px solid rgba(255,255,255,0.15); border-top-color: #3b82f6; border-radius: 50%; animation: qf-spin 0.8s linear infinite; }
     @keyframes qf-spin { to { transform: rotate(360deg); } }
-    .qf-overlay.qf-mode-calendar .qf-scroll { align-items: flex-start; }
-    .qf-overlay.qf-mode-calendar .qf-stage { max-width: 920px; }
-    .qf-cal-title { margin-bottom: 0.4rem; }
-    .qf-calendar .qf-help { margin-bottom: 1.2rem; }
-    .qf-cal-frame { width: 100%; height: 660px; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 20px 50px -20px rgba(0,0,0,0.5); }
-    .qf-cal-frame iframe { display: block; width: 100%; height: 100%; }
-    @media (max-width: 600px) { .qf-cal-frame { height: 560px; } }
-    @media (prefers-reduced-motion: reduce) { .qf-step.is-active, .qf-overlay.is-open .qf-stage { animation: none; } }
+    /* confirm screen (post-submit) — sfondo curato */
+    .qf-overlay.qf-mode-confirm { background: radial-gradient(130% 100% at 50% -5%, #1b2748 0%, #0d1424 45%, #070b14 100%); }
+    .qf-overlay.qf-mode-confirm::before {
+      content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 58% 46% at 50% 6%, rgba(37,99,235,0.40), transparent 60%),
+        radial-gradient(ellipse 46% 42% at 86% 92%, rgba(59,130,246,0.22), transparent 66%),
+        radial-gradient(ellipse 42% 42% at 12% 86%, rgba(37,99,235,0.18), transparent 66%);
+    }
+    .qf-overlay.qf-mode-confirm::after {
+      content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.5;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 75%);
+    }
+    .qf-overlay.qf-mode-confirm .qf-scroll { position: relative; z-index: 1; }
+    .qf-confirm { text-align: center; max-width: 520px; margin: 0 auto; }
+    .qf-confirm-check { position: relative; width: 88px; height: 88px; border-radius: 50%; margin: 0 auto 1.7rem; background: linear-gradient(160deg, #3b82f6, #2563eb); display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 50px -12px rgba(37,99,235,0.75); animation: qf-pop 0.5s cubic-bezier(0.22,0.68,0.32,1) both; }
+    .qf-confirm-check svg { width: 46px; height: 46px; }
+    .qf-confirm-check::before, .qf-confirm-check::after { content: ''; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid rgba(96,165,250,0.55); animation: qf-ring 2.4s ease-out infinite; }
+    .qf-confirm-check::after { animation-delay: 1.2s; }
+    @keyframes qf-ring { 0% { transform: scale(0.92); opacity: 0.7; } 100% { transform: scale(1.7); opacity: 0; } }
+    @keyframes qf-pop { from { transform: scale(0.4); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .qf-confirm .qf-next { margin: 0.6rem auto 0; font-size: 1.1rem; padding: 18px 36px; }
+    @media (prefers-reduced-motion: reduce) { .qf-step.is-active, .qf-overlay.is-open .qf-stage, .qf-confirm-check, .qf-confirm-check::before, .qf-confirm-check::after { animation: none; } }
   </style>
 </head>
 <body>
 
   <!-- ===== SECTION 1 — HERO ===== -->
   <section class="hero">
-    <div class="hero-ribbon">Per associazioni sportive, culturali e no-profit</div>
+    <div class="hero-ribbon">Webinar gratuito · Mercoledì 8 Luglio · ore 21:00 · Diretta Zoom</div>
     <div class="container">
       <div class="hero-inner">
         <h1 class="hero-title">
@@ -293,18 +325,22 @@
           <span class="line2">senza rincorrere sponsor né alzare le quote</span>
         </h1>
         <p class="hero-sub">
-          Offri ai tuoi soci un vantaggio concreto e gratuito, fai conoscere la tua realtà a una <strong>community di oltre 120.000 persone</strong>, e apri per l'associazione una nuova fonte di sostegno economico.
+          In un <strong>webinar gratuito dal vivo</strong> ti mostriamo, numeri alla mano, come offrire ai tuoi soci un vantaggio concreto e gratuito, far conoscere la tua realtà a una <strong>community di oltre 120.000 persone</strong> e aprire per l'associazione una nuova fonte di sostegno economico.
         </p>
-        <p class="hero-note">Ti spieghiamo come funziona davvero, numeri alla mano e senza promesse gonfiate.</p>
+        <div class="webinar-meta">
+          <span class="webinar-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Mercoledì 8 Luglio</span>
+          <span class="webinar-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>Ore 21:00</span>
+        </div>
         <ul class="hero-checklist">
-          <li><span>Un <strong>vantaggio gratuito</strong> per i tuoi soci</span></li>
+          <li><span>Un <strong>vantaggio gratuito</strong> da offrire ai tuoi soci</span></li>
           <li><span>Visibilità verso <strong>oltre 120.000 persone</strong></span></li>
           <li><span>Una <strong>nuova entrata</strong> per l'associazione</span></li>
         </ul>
         <button type="button" class="btn btn-cta btn-large" data-open-form>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Prenota una call gratuita
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2z"/></svg>
+          Iscriviti gratis al webinar
         </button>
+        <p class="optin-note">Non puoi partecipare l'8 luglio? <strong>Iscriviti lo stesso</strong>: scrivici e ti inviamo la registrazione il giorno dopo.</p>
       </div>
     </div>
   </section>
@@ -346,16 +382,17 @@
       <div class="svolta-body">
         <p class="lead">Non è colpa tua. È che finora le uniche strade erano due: chiedere agli sponsor o chiedere ai soci.</p>
         <p class="lead">Ce n'è una diversa. E non parte da una richiesta, <span class="green">parte da un vantaggio che dai tu ai tuoi soci.</span></p>
+        <p class="lead">L'8 luglio, in diretta, ti spieghiamo esattamente come.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== SECTION 4 — COSA OTTIENE LA TUA ASSOCIAZIONE ===== -->
+  <!-- ===== SECTION 4 — COSA SCOPRIRAI ===== -->
   <section>
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Cosa ottiene la tua associazione</p>
-        <h2 class="h2">Tre vantaggi concreti,<br>da subito e senza costi.</h2>
+        <p class="eyebrow">Cosa scoprirai nel webinar</p>
+        <h2 class="h2">Tre vantaggi concreti,<br>spiegati passo passo.</h2>
       </div>
       <div class="benefit-grid">
         <div class="benefit-card">
@@ -371,7 +408,7 @@
         <div class="benefit-card">
           <p class="benefit-num">03</p>
           <h3>Una nuova entrata per l'associazione</h3>
-          <p>Oltre alla visibilità, l'associazione può accedere a un sostegno economico reale per finanziare le proprie attività. Non un aiuto una volta sola, ma un sostegno che può rinnovarsi nel tempo. Qui sotto ti spieghiamo esattamente da dove arriva, senza giri di parole.</p>
+          <p>Oltre alla visibilità, l'associazione può accedere a un sostegno economico reale per finanziare le proprie attività. Non un aiuto una volta sola, ma un sostegno che può rinnovarsi nel tempo. Nel webinar ti spieghiamo esattamente da dove arriva, senza giri di parole.</p>
         </div>
       </div>
     </div>
@@ -387,34 +424,34 @@
       <div class="entrata-box">
         <p>L'app gratuita porta ai soci un <strong>risparmio reale da subito</strong>, ed è il primo passo. Il sostegno per l'associazione può aumentare quando i soci scelgono di attivare anche servizi che già usano ogni giorno, a partire da servizi essenziali che già pagano ogni mese, a condizioni pensate per far risparmiare anche loro.</p>
         <p>Quando i soci attivano questi servizi, <span class="hl">l'azienda partner riconosce all'associazione un contributo.</span></p>
-        <p>Nessuno è obbligato a niente. I soci scelgono solo ciò che conviene davvero anche a loro. In call ti mostriamo quali servizi, come funziona il contributo e cosa puoi aspettarti per la tua realtà specifica.</p>
+        <p>Nessuno è obbligato a niente. I soci scelgono solo ciò che conviene davvero anche a loro. Nel webinar ti mostriamo quali servizi, come funziona il contributo e cosa puoi aspettarti per la tua realtà specifica.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== SECTION 6 — I PASSI ===== -->
+  <!-- ===== SECTION 6 — AGENDA DEL WEBINAR ===== -->
   <section class="gray">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Come si parte</p>
-        <h2 class="h2">Quattro passi,<br>e l'associazione ha una nuova entrata.</h2>
+        <p class="eyebrow">Il programma</p>
+        <h2 class="h2">Cosa vedremo insieme<br>l'8 luglio.</h2>
       </div>
       <div class="steps-list">
         <div class="step-item">
           <p class="step-num">01</p>
-          <p>Fissi una <strong>call gratuita</strong> e analizziamo insieme la tua associazione: quanti soci hai, che tipo di realtà gestisci, quali obiettivi hai.</p>
+          <p>Perché sponsor e quote non bastano più, e qual è la <strong>terza strada</strong> per finanziare la tua associazione.</p>
         </div>
         <div class="step-item">
           <p class="step-num">02</p>
-          <p>Creiamo un <strong>profilo dedicato</strong> alla tua associazione.</p>
+          <p>Come offrire ai tuoi soci un <strong>vantaggio gratuito</strong> che li fa risparmiare da subito, senza chiedere loro un euro.</p>
         </div>
         <div class="step-item">
           <p class="step-num">03</p>
-          <p>Presenti il vantaggio ai tuoi soci, in assemblea o con il <strong>materiale già pronto</strong> che ti diamo. Loro aderiscono gratuitamente e iniziano subito a risparmiare.</p>
+          <p>Come la tua associazione entra in una <strong>vetrina da oltre 120.000 persone</strong> e trova nuovi soci senza pubblicità.</p>
         </div>
         <div class="step-item">
           <p class="step-num">04</p>
-          <p>L'associazione accede alla <strong>visibilità e al sostegno economico</strong>, e tu smetti di rincorrere sponsor.</p>
+          <p>Da dove arriva davvero la <strong>nuova entrata</strong>, spiegato con i numeri e senza promesse gonfiate.</p>
         </div>
       </div>
     </div>
@@ -438,24 +475,24 @@
       </div>
       <div class="faq-list">
         <details class="faq-item">
+          <summary>Il webinar è gratuito?</summary>
+          <div class="faq-answer">Sì, la partecipazione è <strong>completamente gratuita</strong>. Ti chiediamo solo di iscriverti per ricevere il link.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quando e dove si svolge?</summary>
+          <div class="faq-answer"><strong>Mercoledì 8 luglio, alle 21:00</strong>, in diretta su Zoom. Dopo l'iscrizione ti inviamo il link per partecipare.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Non riesco a esserci dal vivo, posso rivederlo?</summary>
+          <div class="faq-answer">Sì. Iscriviti lo stesso: scrivici su WhatsApp e ti inviamo la <strong>registrazione il giorno dopo</strong>.</div>
+        </details>
+        <details class="faq-item">
           <summary>Devo chiedere soldi ai miei soci?</summary>
           <div class="faq-answer">No. Ai soci offri un <strong>vantaggio gratuito</strong>, non una richiesta. È l'opposto di alzare la quota.</div>
         </details>
         <details class="faq-item">
           <summary>C'è un costo per partire?</summary>
           <div class="faq-answer">No. L'iscrizione alla piattaforma e la vetrina sono <strong>gratuite</strong>, per l'associazione e per i soci.</div>
-        </details>
-        <details class="faq-item">
-          <summary>I miei soci cosa rischiano?</summary>
-          <div class="faq-answer">Nulla. L'adesione all'app è gratuita e il risparmio è immediato. Tutto il resto è una loro <strong>libera scelta</strong>.</div>
-        </details>
-        <details class="faq-item">
-          <summary>Quanto tempo mi porta via?</summary>
-          <div class="faq-answer">Poco. Ti diamo <strong>materiale già pronto</strong> da condividere e una persona di riferimento che ti segue.</div>
-        </details>
-        <details class="faq-item">
-          <summary>Come faccio a capire quanto può rendere per la mia associazione?</summary>
-          <div class="faq-answer">In una call di 15 minuti guardiamo i tuoi <strong>numeri reali</strong> e costruiamo una stima concreta sulla tua situazione. Senza simulazioni gonfiate.</div>
         </details>
       </div>
     </div>
@@ -464,14 +501,14 @@
   <!-- ===== SECTION 9 — CTA FINALE ===== -->
   <section class="final-cta">
     <div class="final-cta-inner">
-      <p class="eyebrow white" style="justify-content:center;display:flex;">Il primo passo</p>
-      <h2>Smetti di rincorrere sponsor.<br><span class="green">Inizia a costruire una nuova entrata.</span></h2>
-      <p>Prenota una call gratuita di 15 minuti. Ti spieghiamo tutto, numeri alla mano, senza impegno e senza promesse gonfiate.</p>
+      <p class="eyebrow white" style="justify-content:center;display:flex;">L'appuntamento</p>
+      <h2>L'8 luglio ti aspettiamo.<br><span class="green">Iscriviti al webinar gratuito.</span></h2>
+      <p>Mercoledì 8 luglio, ore 21:00, in diretta su Zoom. Ti mostriamo tutto, numeri alla mano, senza impegno e senza promesse gonfiate.</p>
       <button type="button" class="btn btn-cta btn-large" data-open-form>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Prenota la tua call
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2z"/></svg>
+        Iscriviti gratis al webinar
       </button>
-      <p class="final-cta-microcopy">Niente impegno. Niente promesse gonfiate. Solo numeri reali sulla tua associazione.</p>
+      <p class="final-cta-microcopy">Non puoi partecipare? Iscriviti comunque: scrivici e ti mandiamo la registrazione il giorno dopo.</p>
     </div>
   </section>
 
@@ -489,8 +526,8 @@
     <p style="font-size:0.78rem;color:#64748b;max-width:640px;margin:0.8rem auto 0;line-height:1.5;">Questo sito utilizza cookie e pixel di terze parti (Meta, TikTok) per finalità statistiche e di marketing. Dettagli nella <a href="cookie.html" style="color:#94a3b8;text-decoration:underline;">Cookie Policy</a>.</p>
   </footer>
 
-  <!-- ===== FORM OVERLAY — multi-step (porta al calendario) ===== -->
-  <div class="qf-overlay" id="qfOverlay" role="dialog" aria-modal="true" aria-label="Form di candidatura associazioni">
+  <!-- ===== FORM OVERLAY — iscrizione webinar (nome + email) ===== -->
+  <div class="qf-overlay" id="qfOverlay" role="dialog" aria-modal="true" aria-label="Iscrizione al webinar">
     <div class="qf-bar"><div class="qf-bar-fill" id="qfBarFill"></div></div>
     <button type="button" class="qf-close" id="qfClose" aria-label="Chiudi">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -500,39 +537,20 @@
     </div>
   </div>
 
-  <!-- ===== FORM MULTI-STEP — logica + invio Supabase + Calendly + redirect grazie ===== -->
+  <!-- ===== FORM — logica + invio Supabase + schermata conferma ===== -->
   <script>
   (function () {
     /* ===== CONFIG ===== */
-    var SUPABASE_URL  = 'https://kmddvzsufoyagigncjlw.supabase.co';
-    var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttZGR2enN1Zm95YWdpZ25jamx3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3MTcwMTksImV4cCI6MjA5NzI5MzAxOX0.RrWR2S_YISP3lEl2V0qhkp7WDhb0NQqkTI2s1yZKE2g';
-    var SUPABASE_TABLE = 'associazioni_leads';
-    var CALENDLY_URL = 'https://calendly.com/elementanovateam/30min';
+    var SUPABASE_URL   = 'https://kmddvzsufoyagigncjlw.supabase.co';
+    var SUPABASE_ANON  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttZGR2enN1Zm95YWdpZ25jamx3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3MTcwMTksImV4cCI6MjA5NzI5MzAxOX0.RrWR2S_YISP3lEl2V0qhkp7WDhb0NQqkTI2s1yZKE2g';
+    var SUPABASE_TABLE = 'webinar_8_luglio_lead';
+    var THANKYOU_URL   = 'grazie-webinar.html';
 
-    /* ===== DOMANDE (PROVVISORIE — l'utente le definirà; tutte portano al calendario) ===== */
+    /* ===== DOMANDE (iscrizione webinar: nome + email nella stessa schermata) ===== */
     var QUESTIONS = [
-      { key: 'nome', type: 'text', label: 'Come ti chiami?', help: 'Il nome del referente dell’associazione.', placeholder: 'Nome e cognome', required: true },
-      { key: 'ruolo', type: 'choice', label: 'Che ruolo hai nell’associazione?', required: true, options: [
-        { value: 'Presidente', label: 'Presidente' },
-        { value: 'Consigliere / Direttivo', label: 'Consigliere / Direttivo' },
-        { value: 'Membro e associato', label: 'Membro e associato' },
-        { value: 'Altro', label: 'Altro' }
-      ]},
-      { key: 'tipo_associazione', type: 'choice', label: 'Che tipo di associazione gestisci?', required: true, options: [
-        { value: 'Sportiva', label: 'Sportiva' },
-        { value: 'Culturale / Ricreativa', label: 'Culturale / Ricreativa' },
-        { value: 'No-profit / Volontariato', label: 'No-profit / Volontariato' },
-        { value: 'Altro', label: 'Altro' }
-      ]},
-      { key: 'numero_soci', type: 'choice', label: 'Quanti soci avete, più o meno?', required: true, options: [
-        { value: 'Meno di 50', label: 'Meno di 50' },
-        { value: '50 - 150', label: '50 - 150' },
-        { value: '150 - 500', label: '150 - 500' },
-        { value: 'Oltre 500', label: 'Oltre 500' }
-      ]},
-      { key: 'interesse', type: 'choice', label: 'Ti piacerebbe scoprire come dare ai tuoi soci un vantaggio gratuito e aprire una nuova entrata per l’associazione senza investimenti?', required: true, options: [
-        { value: 'Sì, facciamo una chiamata', label: 'Sì, facciamo una chiamata' },
-        { value: 'Voglio prima capire i numeri', label: 'Voglio prima capire i numeri' }
+      { key: 'iscrizione', type: 'group', label: 'Iscriviti al webinar dell’8 luglio', help: 'Lasciaci nome ed email: ti confermiamo l’iscrizione all’istante.', fields: [
+        { key: 'nome',  type: 'text',  label: 'Nome e cognome', placeholder: 'Il tuo nome e cognome', required: true },
+        { key: 'email', type: 'email', label: 'Email',          placeholder: 'latua@email.it',        required: true }
       ]}
     ];
 
@@ -551,7 +569,8 @@
         var step = document.createElement('div');
         step.className = 'qf-step';
         step.setAttribute('data-step', i);
-        var count = '<div class="qf-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Domanda ' + (i + 1) + ' di ' + TOTAL + '</div>';
+        var countLabel = (q.type === 'group') ? 'Iscrizione al webinar' : ('Passo ' + (i + 1) + ' di ' + TOTAL);
+        var count = '<div class="qf-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' + countLabel + '</div>';
         var title = '<h2 class="qf-q">' + q.label + '</h2>';
         var help  = q.help ? '<p class="qf-help">' + q.help + '</p>' : '';
         var field = '';
@@ -563,6 +582,14 @@
                        '<span class="qf-key">' + keyLabel + '</span><span>' + opt.label + '</span></button>';
           });
           field += '</div>';
+        } else if (q.type === 'group') {
+          field += '<div class="qf-fields">';
+          q.fields.forEach(function (f) {
+            var ft = (f.type === 'email') ? 'email' : 'text';
+            field += '<div class="qf-field"><label class="qf-field-label">' + f.label + '</label>' +
+                       '<input class="qf-input" type="' + ft + '" data-fkey="' + f.key + '" placeholder="' + (f.placeholder || '') + '" autocomplete="off"></div>';
+          });
+          field += '</div>';
         } else if (q.type === 'textarea') {
           field = '<textarea class="qf-textarea" rows="3" placeholder="' + (q.placeholder || '') + '"></textarea>';
         } else {
@@ -570,9 +597,9 @@
           field = '<input class="qf-input" type="' + inputType + '" placeholder="' + (q.placeholder || '') + '" autocomplete="off">';
         }
         var error = '<div class="qf-error"></div>';
-        var nextLabel = (i === TOTAL - 1) ? 'Invia e prenota' : 'Avanti';
+        var nextLabel = (i === TOTAL - 1) ? 'Iscrivimi al webinar' : 'Avanti';
         var back = (i > 0) ? '<button type="button" class="qf-back">← Indietro</button>' : '';
-        var hint = (q.type === 'choice') ? '' : '<span class="qf-hint">premi Invio ↵</span>';
+        var hint = (q.type === 'choice' || q.type === 'group') ? '' : '<span class="qf-hint">premi Invio ↵</span>';
         var nav = '<div class="qf-nav">' +
                     '<button type="button" class="qf-next">' + nextLabel +
                       '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
@@ -608,6 +635,11 @@
               setTimeout(function () { tryAdvance(i); }, 240);
             });
           });
+        } else if (q.type === 'group') {
+          step.querySelectorAll('.qf-input').forEach(function (input) {
+            input.addEventListener('input', function () { clearError(step); });
+            input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); tryAdvance(i); } });
+          });
         } else {
           var input = step.querySelector('.qf-input, .qf-textarea');
           input.addEventListener('input', function () { clearError(step); });
@@ -632,6 +664,18 @@
         if (q.required && !val) { showError(step, 'Scegli un’opzione per continuare.'); return false; }
         return true;
       }
+      if (q.type === 'group') {
+        var ok = true;
+        q.fields.forEach(function (f) {
+          var inp = step.querySelector('.qf-input[data-fkey="' + f.key + '"]');
+          var v = (inp.value || '').trim();
+          answers[f.key] = v;
+          if (!ok) return;
+          if (f.required && !v) { showError(step, 'Compila il campo “' + f.label + '” per continuare.'); ok = false; return; }
+          if (f.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { showError(step, 'Controlla l’email: sembra non valida.'); ok = false; return; }
+        });
+        return ok;
+      }
       var input = step.querySelector('.qf-input, .qf-textarea');
       val = (input.value || '').trim();
       answers[q.key] = val;
@@ -642,7 +686,7 @@
 
     function tryAdvance(i) {
       if (!validate(i)) return;
-      if (i === TOTAL - 1) { submit('calendar'); return; }
+      if (i === TOTAL - 1) { submit(); return; }
       goTo(i + 1);
     }
 
@@ -664,46 +708,10 @@
         '<div class="qf-sending">' +
           '<div class="qf-spinner"></div>' +
           '<h2 class="qf-q">Ci siamo!</h2>' +
-          '<p class="qf-help">Stiamo salvando la tua richiesta e ti portiamo al calendario per prenotare la call...</p>' +
+          '<p class="qf-help">Stiamo salvando la tua iscrizione al webinar...</p>' +
         '</div>';
       barFill.style.width = '100%';
     }
-
-    function loadCalendly(cb) {
-      if (window.Calendly) { cb(); return; }
-      var existing = document.getElementById('calendly-widget-js');
-      if (existing) { existing.addEventListener('load', cb); return; }
-      var link = document.createElement('link');
-      link.rel = 'stylesheet'; link.href = 'https://assets.calendly.com/assets/external/widget.css';
-      document.head.appendChild(link);
-      var s = document.createElement('script');
-      s.id = 'calendly-widget-js'; s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true; s.onload = cb;
-      document.head.appendChild(s);
-    }
-
-    function renderCalendar() {
-      overlay.classList.add('qf-mode-calendar');
-      stage.innerHTML =
-        '<div class="qf-calendar">' +
-          '<div class="qf-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ultimo passo</div>' +
-          '<h2 class="qf-q qf-cal-title">Scegli l\'orario per la tua call</h2>' +
-          '<p class="qf-help">Seleziona uno slot e lascia i tuoi contatti: ti chiameremo noi all\'orario scelto.</p>' +
-          '<div class="qf-cal-frame" id="qfCalEmbed"></div>' +
-        '</div>';
-      barFill.style.width = '100%';
-      loadCalendly(function () {
-        if (!window.Calendly) return;
-        var el = document.getElementById('qfCalEmbed');
-        if (!el) return;
-        window.Calendly.initInlineWidget({
-          url: CALENDLY_URL,
-          parentElement: el,
-          prefill: { name: answers.nome || '' }
-        });
-      });
-    }
-
-    function fireLead() { try { if (typeof fbq === 'function') fbq('track', 'Lead'); } catch (e) {} }
 
     function submit() {
       if (sending) return;
@@ -711,36 +719,30 @@
       if (hp && hp.value) { return; }
       sending = true;
       renderSending();
-      fireLead();
 
       var payload = {
         nome: answers.nome || null,
-        ruolo: answers.ruolo || null,
-        tipo_associazione: answers.tipo_associazione || null,
-        numero_soci: answers.numero_soci || null,
-        interesse: answers.interesse || null,
-        esito: 'calendario',
-        fonte: 'cashback-associazioni'
+        email: answers.email || null,
+        esito: 'iscritto',
+        fonte: 'cashback-webinar-8-luglio'
       };
 
       var done = false;
-      function finish() { if (done) return; done = true; renderCalendar(); }
+      function finish() { if (done) return; done = true; window.location.href = THANKYOU_URL; }
       var failsafe = setTimeout(finish, 3500);
-
-      var configured = SUPABASE_URL.indexOf('INSERISCI') === -1 && SUPABASE_ANON.indexOf('INSERISCI') === -1;
-      if (!configured) { clearTimeout(failsafe); setTimeout(finish, 600); return; }
 
       fetch(SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/' + SUPABASE_TABLE, {
         method: 'POST',
         headers: { 'apikey': SUPABASE_ANON, 'Authorization': 'Bearer ' + SUPABASE_ANON, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
+        keepalive: true
       }).catch(function () {})
         .finally(function () { clearTimeout(failsafe); finish(); });
     }
 
     function resetForm() {
       sending = false; answers = {}; current = 0;
-      overlay.classList.remove('qf-mode-calendar');
+      overlay.classList.remove('qf-mode-confirm');
       stage.innerHTML = '';
       buildSteps();
       barFill.style.width = '0%';
@@ -752,13 +754,6 @@
     closeBtn.addEventListener('click', closeForm);
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && overlay.classList.contains('is-open') && !sending) closeForm();
-    });
-
-    // Redirect dopo che l'utente prenota la call (evento emesso dall'iframe Calendly)
-    window.addEventListener('message', function (e) {
-      if (e.data && e.data.event === 'calendly.event_scheduled') {
-        window.location.href = 'grazie-call.html';
-      }
     });
   })();
   </script>
