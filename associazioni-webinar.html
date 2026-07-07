@@ -247,7 +247,8 @@
     .qf-close { position: absolute; top: 18px; right: 18px; z-index: 3; width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.05); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.16s ease; }
     .qf-close:hover { background: rgba(255,255,255,0.12); }
     .qf-close svg { width: 20px; height: 20px; }
-    .qf-scroll { position: absolute; inset: 0; overflow-y: auto; display: flex; align-items: center; justify-content: center; padding: 5rem 1.5rem 3rem; }
+    .qf-scroll { position: absolute; inset: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; display: flex; align-items: center; justify-content: center; padding: 5rem 1.5rem 3rem; }
+    @media (max-height: 760px) { .qf-scroll { align-items: flex-start; padding-top: 4rem; } }
     .qf-stage { width: 100%; max-width: 620px; }
     .qf-step { display: none; }
     .qf-step.is-active { display: block; animation: qf-step-in 0.32s cubic-bezier(0.22,0.68,0.32,1) both; }
@@ -715,8 +716,6 @@
 
     function submit() {
       if (sending) return;
-      var hp = document.getElementById('qfHp');
-      if (hp && hp.value) { return; }
       sending = true;
       renderSending();
 
@@ -728,16 +727,18 @@
       };
 
       var done = false;
-      function finish() { if (done) return; done = true; window.location.href = THANKYOU_URL; }
+      function finish() { if (done) return; done = true; clearTimeout(failsafe); window.location.href = THANKYOU_URL; }
       var failsafe = setTimeout(finish, 3500);
 
-      fetch(SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/' + SUPABASE_TABLE, {
-        method: 'POST',
-        headers: { 'apikey': SUPABASE_ANON, 'Authorization': 'Bearer ' + SUPABASE_ANON, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
-        body: JSON.stringify(payload),
-        keepalive: true
-      }).catch(function () {})
-        .finally(function () { clearTimeout(failsafe); finish(); });
+      // Invio a Supabase — qualunque esito (successo, errore o browser senza fetch) porta comunque alla thank-you.
+      try {
+        fetch(SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/' + SUPABASE_TABLE, {
+          method: 'POST',
+          headers: { 'apikey': SUPABASE_ANON, 'Authorization': 'Bearer ' + SUPABASE_ANON, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+          body: JSON.stringify(payload),
+          keepalive: true
+        }).then(finish, finish);
+      } catch (e) { finish(); }
     }
 
     function resetForm() {
